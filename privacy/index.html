@@ -1,182 +1,76 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - Privacy Policy | Land Chat</title>
+    <title>سياسة الخصوصية الكاملة - Land Chat</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        html[lang="ar"] .en-content { display: none; }
-        html[lang="en"] .ar-content { display: none; }
-        html[lang="en"] .legal-content { text-align: left; direction: ltr; }
-        html[lang="en"] .legal-content li::before { left: -1.5rem; right: auto; content: '❄'; position: absolute; color: var(--accent-pink); }
+        .light-matrix { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: #020617; overflow: hidden; }
+        .light-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; animation: floatOrb 20s infinite alternate ease-in-out; }
+        .orb-1 { width: 500px; height: 500px; background: rgba(14, 165, 233, 0.15); top: -10%; left: -5%; }
+        @keyframes floatOrb { 0% { transform: translate(0, 0); } 100% { transform: translate(50px, 50px); } }
+        .legal-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 3.5rem; margin: 100px auto; max-width: 1000px; color: #fff; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        h2 { color: var(--primary-light); margin-top: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.4rem; }
+        p, li { color: rgba(255,255,255,0.85); line-height: 1.9; margin-bottom: 1.2rem; font-size: 1.05rem; }
+        ul { padding-right: 1.5rem; list-style-type: square; }
+        strong { color: var(--primary-light); }
     </style>
 </head>
-
-<body class="legal-page">
+<body>
+    <div class="light-matrix"><div class="light-orb orb-1"></div></div>
     <nav>
         <div class="logo-container">
             <img src="../images/logo.webp" alt="Land Chat Logo" class="nav-logo">
             <span class="logo">LAND CHAT</span>
         </div>
         <ul class="nav-links">
-            <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+            <li><a href="../" data-key="nav_home">الرئيسية</a></li>
             <li><a href="../download/" data-key="nav_download">التحميل</a></li>
         </ul>
         <button class="lang-toggle" id="langToggle">English</button>
     </nav>
 
-    <main class="legal-container">
-        <div class="legal-content">
-            
-            <div class="ar-content">
-                <h1>سياسة الخصوصية | Privacy Policy</h1>
-                <p class="last-updated">آخر تحديث: 30 يناير 2026</p>
+    <main class="legal-card">
+        <h1>سياسة الخصوصية الشاملة لـ لاند تشات</h1>
+        <p>تلتزم منصة <strong>لاند تشات (Land Chat)</strong> بحماية خصوصيتك وتوفير بيئة آمنة للتواصل. توضح هذه البنود العشرة سياستنا الصارمة في التعامل مع بياناتك.</p>
+        
+        <h2>1. مقدمة حول الخدمة</h2>
+        <p>يتم تقديم خدمة لاند تشات "كما هي" لغرض المراسلة الآمنة. باستخدامك للتطبيق، فإنك توافق على سياسات جمع واستخدام المعلومات الموضحة أدناه.</p>
 
-                <section>
-                    <h2>1. مقدمة</h2>
-                    <p>تم بناء تطبيق Land Chat (لاند تشات) كتطبيق مجاني/مدفوع. يتم تقديم هذه الخدمة من قبل لاند تشات "كما هي". تُستخدم هذه الصفحة لإعلام الزوار بخصوص سياساتنا المتعلقة بجمع المعلومات الشخصية واستخدامها والكشف عنها إذا قرر أي شخص استخدام خدمتنا.</p>
-                    <p>إذا اخترت استخدام خدمتنا، فإنك توافق على جمع المعلومات واستخدامها فيما يتعلق بهذه السياسة. يتم استخدام المعلومات الشخصية التي نجمعها لتوفير الخدمة وتحسينها.</p>
-                </section>
+        <h2>2. جمع واستخدام المعلومات الشخصية</h2>
+        <p>للحصول على تجربة أفضل، قد نطلب تزويدنا بمعلومات معينة مثل رقم الهاتف والاسم المستعار وصورة الملف الشخصي. تُستخدم هذه البيانات حصراً لتحديد هويتك داخل التطبيق وتسهيل التواصل.</p>
 
-                <section>
-                    <h2>2. جمع المعلومات واستخدامها</h2>
-                    <p>للحصول على تجربة أفضل أثناء استخدام خدمتنا، قد نطلب منك تزويدنا ببعض المعلومات التعريفية الشخصية:</p>
-                    <ul>
-                        <li><strong>معلومات الحساب:</strong> رقم الهاتف، عنوان البريد الإلكتروني، والاسم المستعار وصورتك.</li>
-                        <li><strong>معلومات الجهاز:</strong> معرف الجهاز (Hardware ID) وعنوان الـ IP لضمان الأمان.</li>
-                    </ul>
-                    <div class="data-box">
-                        <h3>خدمات الطرف الثالث</h3>
-                        <p>يستخدم التطبيق خدمات طرف ثالث قد تجمع معلومات تستخدم لتحديد هويتك:</p>
-                        <ul>
-                            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
-                            <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
-                        </ul>
-                    </div>
-                </section>
+        <h2>3. بيانات السجل (Log Data)</h2>
+        <p>في حال حدوث خطأ فني، نقوم بجمع بيانات تسمى "بيانات السجل" من جهازك، وتشمل عنوان الـ IP، اسم الجهاز، وإصدار نظام التشغيل، ووقت حدوث الخطأ للمساعدة في إصلاحه.</p>
 
-                <section>
-                    <h2>3. بيانات السجل (Log Data)</h2>
-                    <p>في حالة حدوث خطأ في التطبيق، نقوم بجمع بيانات ومعلومات على هاتفك تسمى بيانات السجل. قد تتضمن هذه المعلومات عنوان الـ IP الخاص بجهازك، واسم الجهاز، وإصدار نظام التشغيل، ووقت وتاريخ الاستخدام.</p>
-                </section>
+        <h2>4. خدمات الطرف الثالث</h2>
+        <p>يستخدم التطبيق خدمات طرف ثالث قد تجمع معلومات تعريفية، ومنها:</p>
+        <ul>
+            <li>خدمات Google Play لضمان استقرار التطبيق.</li>
+            <li>Firebase Analytics لتحسين تجربة المستخدم وفهم الأداء.</li>
+        </ul>
 
-                <section>
-                    <h2>4. ملفات تعريف الارتباط (Cookies)</h2>
-                    <p>لا تستخدم هذه الخدمة ملفات تعريف الارتباط بشكل صريح. ومع ذلك، قد يستخدم التطبيق كودًا ومكتبات تابعة لجهات خارجية تستخدمها لجمع المعلومات. لديك الخيار بقبولها أو رفضها.</p>
-                </section>
+        <h2>5. ملفات تعريف الارتباط (Cookies)</h2>
+        <p>لا نستخدم ملفات تعريف الارتباط بشكل صريح في التطبيق. ومع ذلك، قد تستخدم مكتبات الطرف الثالث كوداً يجمع بعض المعلومات عبر "الكوكيز"، ولك الحق في قبولها أو رفضها.</p>
 
-                <section>
-                    <h2>5. مقدمو الخدمة</h2>
-                    <p>قد نقوم بتوظيف شركات خارجية لتسهيل خدمتنا، أو تقديم الخدمة نيابة عنا، أو مساعدتنا في تحليل كيفية استخدام الخدمة. هذه الأطراف لها حق الوصول لمعلوماتك لأداء مهامها فقط وهي ملزمة بعدم الكشف عنها.</p>
-                </section>
+        <h2>6. تشفير الرسائل (Security)</h2>
+        <p>نحن نقدر ثقتك، لذا نستخدم تشفير <strong>End-to-End</strong> لضمان حماية رسائلك. لا يمكن لأي طرف ثالث، بما في ذلك لاند تشات، الوصول لمحتوى محادثاتك.</p>
 
-                <section>
-                    <h2>6. الأمان</h2>
-                    <p>نحن نقدر ثقتك ونسعى لحماية معلوماتك بوسائل مقبولة تجاريًا. تذكر أنه لا توجد وسيلة نقل عبر الإنترنت آمنة 100%، لكننا نستخدم تشفير End-to-End للرسائل.</p>
-                </section>
+        <h2>7. مقدمو الخدمة (Service Providers)</h2>
+        <p>قد نستعين بشركات خارجية لتسهيل خدمتنا أو تحليل كيفية استخدامها. هؤلاء الأطراف لديهم وصول محدود لبياناتك فقط لأداء المهام الموكلة إليهم وهم ملزمون بعدم الإفصاح عنها.</p>
 
-                <section>
-                    <h2>7. روابط لمواقع أخرى</h2>
-                    <p>قد تحتوي هذه الخدمة على روابط لمواقع أخرى. إذا قمت بالنقر فوق رابط جهة خارجية، فسيتم توجيهك إلى هذا الموقع. نحن لا نتحمل مسؤولية المحتوى أو السياسات الخاصة بتلك المواقع.</p>
-                </section>
+        <h2>8. خصوصية الأطفال</h2>
+        <p>خدماتنا لا تخاطب الأشخاص دون سن 13 عاماً. إذا اكتشفنا وجود بيانات لطفل دون هذا السن، فإننا نقوم بحذفها من خوادمنا فوراً.</p>
 
-                <section>
-                    <h2>8. خصوصية الأطفال</h2>
-                    <p>لا تخاطب هذه الخدمات أي شخص يقل عمره عن 13 عامًا. إذا اكتشفنا أن طفلاً زودنا بمعلومات شخصية، نقوم بحذفها فورًا.</p>
-                </section>
+        <h2>9. الحق في حذف البيانات نهائياً</h2>
+        <p>يمنحك لاند تشات السيطرة الكاملة على بياناتك. يمكنك حذف حسابك وكافة الرسائل والملفات المرتبطة به نهائياً من داخل إعدادات التطبيق، ولن يبقى لها أي أثر في خوادمنا.</p>
 
-                <section>
-                    <h2>9. حذف البيانات</h2>
-                    <div class="data-box important">
-                        <p>لك الحق الكامل في مسح وجودك الرقمي لدينا. يمكنك حذف حسابك نهائياً من إعدادات التطبيق، وسيتم مسح كافة الرسائل والبيانات من خوادمنا.</p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>10. التغييرات على السياسة</h2>
-                    <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. ننصحك بمراجعة هذه الصفحة دوريًا. تسري هذه السياسة اعتبارًا من 2026-01-30.</p>
-                </section>
-            </div>
-
-            <div class="en-content">
-                <h1>Privacy Policy</h1>
-                <p class="last-updated">Last Updated: January 30, 2026</p>
-
-                <section>
-                    <h2>1. Introduction</h2>
-                    <p>Land Chat app is built as a Free/Freemium app. This SERVICE is provided by Land Chat at no cost and is intended for use as is.</p>
-                    <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy.</p>
-                </section>
-
-                <section>
-                    <h2>2. Information Collection and Use</h2>
-                    <p>For a better experience, we may require you to provide us with certain personally identifiable information:</p>
-                    <ul>
-                        <li><strong>Account Info:</strong> Phone number, email address, nickname, and profile picture.</li>
-                        <li><strong>Device Info:</strong> Hardware ID and IP address for security purposes.</li>
-                    </ul>
-                    <div class="data-box">
-                        <h3>Third-Party Services</h3>
-                        <p>The app does use third-party services that may collect information used to identify you:</p>
-                        <ul>
-                            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
-                            <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>3. Log Data</h2>
-                    <p>Whenever you use our Service, in a case of an error in the app, we collect data and information on your phone called Log Data. This may include your IP address, device name, and OS version.</p>
-                </section>
-
-                <section>
-                    <h2>4. Cookies</h2>
-                    <p>This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies”. You have the option to accept or refuse them.</p>
-                </section>
-
-                <section>
-                    <h2>5. Service Providers</h2>
-                    <p>We may employ third-party companies to facilitate our Service, provide the Service on our behalf, or perform Service-related services. These parties have access to your info only to perform these tasks.</p>
-                </section>
-
-                <section>
-                    <h2>6. Security</h2>
-                    <p>We value your trust and strive to use commercially acceptable means of protecting your info. We use End-to-End encryption for messages to ensure maximum privacy.</p>
-                </section>
-
-                <section>
-                    <h2>7. Links to Other Sites</h2>
-                    <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. We have no control over and assume no responsibility for the content of these sites.</p>
-                </section>
-
-                <section>
-                    <h2>8. Children’s Privacy</h2>
-                    <p>These Services do not address anyone under the age of 13. If we discover that a child under 13 has provided us with personal info, we immediately delete it.</p>
-                </section>
-
-                <section>
-                    <h2>9. Data Deletion</h2>
-                    <div class="data-box important">
-                        <p>You have the full right to remove your digital footprint. You can permanently delete your account from the app settings, which will erase all messages and data from our servers.</p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>10. Changes to This Policy</h2>
-                    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically. This policy is effective as of 2026-01-30.</p>
-                </section>
-            </div>
-
-        </div>
+        <h2>10. التغييرات على هذه السياسة</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية دورياً. ننصحك بمراجعة هذه الصفحة بشكل مستمر. تسري هذه التعديلات بمجرد نشرها هنا.</p>
     </main>
-
-    <footer>
-        <p>© 2026 Land Chat. All rights reserved.</p>
-    </footer>
 
     <script src="../js/main.js"></script>
 </body>
