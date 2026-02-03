@@ -39,17 +39,10 @@ const translations = {
     }
 };
 
-// كود تحميل الـ APK الذكي
-async function downloadLatestAPK() {
-    const repoOwner = "RubaAbuEed";
-    const repoName = "RubaAbuEed.github.io";
-    try {
-        const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/`);
-        const files = await response.json();
-        const apkFile = files.find(file => file.name.endsWith('.apk'));
-        if (apkFile) { window.location.href = apkFile.download_url; }
-        else { alert("عذراً، لم يتم العثور على ملف APK حالياً."); }
-    } catch (e) { console.error("Error fetching APK:", e); }
+// وظيفة التحميل باستخدام الرابط الذي أرسلته يا أبو غيث
+function downloadLatestAPK() {
+    const directLink = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
+    window.location.href = directLink;
 }
 
 function switchLanguage(lang) {
@@ -57,7 +50,9 @@ function switchLanguage(lang) {
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
-        if (translations[lang][key]) { el.textContent = translations[lang][key]; }
+        if (translations[lang] && translations[lang][key]) { 
+            el.textContent = translations[lang][key]; 
+        }
     });
     localStorage.setItem('preferredLang', lang);
     const btn = document.getElementById('langToggle');
@@ -65,18 +60,26 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // إعداد زر تبديل اللغة
     const btn = document.getElementById('langToggle');
-    if (btn) btn.addEventListener('click', () => {
-        const nextLang = document.documentElement.lang === 'ar' ? 'en' : 'ar';
-        switchLanguage(nextLang);
-    });
+    if (btn) {
+        btn.addEventListener('click', () => {
+            const nextLang = document.documentElement.lang === 'ar' ? 'en' : 'ar';
+            switchLanguage(nextLang);
+        });
+    }
+
+    // لغة البداية (العربية)
     switchLanguage(localStorage.getItem('preferredLang') || 'ar');
     
-    // ربط أزرار التحميل بالكود الذكي
-    document.querySelectorAll('a[href*=".apk"], .btn-download-smart').forEach(el => {
+    // ربط كافة أزرار التحميل بالرابط الجديد
+    document.querySelectorAll('.btn-primary, .btn-download-smart').forEach(el => {
         el.addEventListener('click', (e) => {
-            e.preventDefault();
-            downloadLatestAPK();
+            // التحقق إذا كان الزر مخصصاً للتحميل
+            if (el.getAttribute('data-key') === 'btn_download' || el.closest('.download-card')) {
+                e.preventDefault();
+                downloadLatestAPK();
+            }
         });
     });
 });
