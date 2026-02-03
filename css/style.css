@@ -447,3 +447,51 @@ footer {
         padding: 1rem 5%;
     }
 }
+
+/* تنسيقات القائمة المنسدلة */
+.nav-controls { display: flex; align-items: center; gap: 15px; }
+
+.dropdown { position: relative; display: inline-block; }
+
+.menu-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-btn:hover { background: var(--primary-light); box-shadow: 0 0 15px var(--primary-light); }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(15px);
+    min-width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    z-index: 1000;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Cairo', sans-serif;
+}
+
+.dropdown-content li a:hover { background: rgba(14, 165, 233, 0.2); color: var(--primary-light); }
+
+.show-dropdown { display: block !important; animation: fadeIn 0.3s ease; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
