@@ -16,9 +16,24 @@
         .orb-1 { width: 500px; height: 500px; background: rgba(14, 165, 233, 0.3); top: -10%; left: -5%; }
         .orb-2 { width: 400px; height: 400px; background: rgba(244, 114, 182, 0.2); bottom: 10%; right: 5%; }
         @keyframes floatOrb { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(-50px, 100px) scale(0.9); } }
-        .hero-content h1 { background: linear-gradient(90deg, #fff, var(--primary-light), #fff); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: shine 5s linear infinite; }
+        
+        .hero-content h1 { 
+            background: linear-gradient(90deg, #fff, var(--primary-light), #fff); 
+            background-size: 200% auto; 
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            animation: shine 5s linear infinite; 
+        }
         @keyframes shine { to { background-position: 200% center; } }
-        .feature-card { background: rgba(255, 255, 255, 0.03) !important; backdrop-filter: blur(15px) !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+        
+        .feature-card { 
+            background: rgba(255, 255, 255, 0.03) !important; 
+            backdrop-filter: blur(15px) !important; 
+            border: 1px solid rgba(255, 255, 255, 0.1) !important; 
+            transition: all 0.4s ease;
+        }
+        .feature-card:hover { border-color: var(--primary-light) !important; transform: translateY(-10px); }
     </style>
 </head>
 
@@ -45,7 +60,7 @@
     <header class="hero" id="home" style="background: url('images/hero.webp') center/cover no-repeat;">
         <div class="hero-content">
             <h1 data-key="hero_h1">سريع. آمن. ممتع.</h1>
-            <p data-key="hero_p">يقدم لاند تشات تجربة مراسلة خاصة مثالية مع تشفير تام ومميزات متميزة.</p>
+            <p data-key="hero_p">يقدم لاند تشات تجربة مراسلة خاصة مثالية مع تشفير تام ومميزات متميزة لضمان خصوصيتك.</p>
             <a href="download/" class="btn-primary" data-key="btn_download">حمل لاند تشات الآن</a>
         </div>
     </header>
@@ -53,32 +68,37 @@
     <section class="features" id="features">
         <div class="section-title"><h2 data-key="features_title">المميزات الأساسية</h2></div>
         <div class="features-grid">
-            <div class="feature-card"><i class="fas fa-shield-halved"></i><h3 data-key="feat_security_h3">تشفير عسكري</h3><p data-key="feat_security_p">حماية قصوى لرسائلك في لاند تشات.</p></div>
-            <div class="feature-card"><i class="fas fa-video"></i><h3 data-key="feat_calls_h3">مكالمات HD</h3><p data-key="feat_calls_p">مكالمات عالية الدقة تعمل في أصعب الظروف.</p></div>
-            <div class="feature-card"><i class="fas fa-users-rectangle"></i><h3 data-key="feat_rooms_h3">غرف وتجمعات</h3><p data-key="feat_rooms_p">أنشئ مجتمعك الخاص في لاند تشات.</p></div>
-            <div class="feature-card"><i class="fas fa-gift"></i><h3 data-key="feat_gifts_h3">هدايا وجوائز</h3><p data-key="feat_gifts_p">عبر عن مشاعرك بهدايا افتراضية مميزة.</p></div>
-            <div class="feature-card"><i class="fas fa-microphone-lines"></i><h3 data-key="feat_voice_h3">رسائل صوتية</h3><p data-key="feat_voice_p">تواصل أسرع بصوت نقي وواضح.</p></div>
-            <div class="feature-card"><i class="fas fa-medal"></i><h3 data-key="feat_levels_h3">نظام مستويات</h3><p data-key="feat_levels_p">ارفع رتبتك لتكون من نخبة لاند تشات.</p></div>
-            <div class="feature-card"><i class="fas fa-user-shield"></i><h3 data-key="feat_admin_h3">إدارة احترافية</h3><p data-key="feat_admin_p">أدوات قوية لإدارة الغرف بكفاءة.</p></div>
-            <div class="feature-card"><i class="fas fa-file-arrow-up"></i><h3 data-key="feat_files_h3">مشاركة الملفات</h3><p data-key="feat_files_p">أرسل ملفاتك بسرعة وبأحجام كبيرة.</p></div>
+            <div class="feature-card"><i class="fas fa-shield-halved"></i><h3 data-key="feat_security_h3">تشفير عسكري</h3><p data-key="feat_security_p">حماية قصوى لرسائلك في لاند تشات باستخدام AES-256.</p></div>
+            <div class="feature-card"><i class="fas fa-video"></i><h3 data-key="feat_calls_h3">مكالمات HD</h3><p data-key="feat_calls_p">مكالمات صوتية ومرئية فائقة الجودة تعمل في ظروف الإنترنت الضعيفة.</p></div>
+            <div class="feature-card"><i class="fas fa-users-rectangle"></i><h3 data-key="feat_rooms_h3">غرف وتجمعات</h3><p data-key="feat_rooms_p">أنشئ مجتمعك الخاص أو انضم لآلاف الغرف في لاند تشات.</p></div>
+            <div class="feature-card"><i class="fas fa-gift"></i><h3 data-key="feat_gifts_h3">هدايا وجوائز</h3><p data-key="feat_gifts_p">عبر عن مشاعرك بإرسال هدايا افتراضية مميزة واجمع النقاط.</p></div>
+            <div class="feature-card"><i class="fas fa-microphone-lines"></i><h3 data-key="feat_voice_h3">رسائل صوتية</h3><p data-key="feat_voice_p">تواصل أسرع عبر الرسائل الصوتية الواضحة مع ميزة تسريع التشغيل.</p></div>
+            <div class="feature-card"><i class="fas fa-medal"></i><h3 data-key="feat_levels_h3">نظام مستويات</h3><p data-key="feat_levels_p">احصل على أوسمة نادرة وارفع رتبتك لتكون من النخبة.</p></div>
+            <div class="feature-card"><i class="fas fa-user-shield"></i><h3 data-key="feat_admin_h3">إدارة احترافية</h3><p data-key="feat_admin_p">أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين بكفاءة.</p></div>
+            <div class="feature-card"><i class="fas fa-file-arrow-up"></i><h3 data-key="feat_files_h3">مشاركة الملفات</h3><p data-key="feat_files_p">أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة.</p></div>
         </div>
     </section>
 
     <section class="features" style="background: rgba(15, 23, 42, 0.5); backdrop-filter: blur(10px);">
-        <div class="section-title"><h2 data-key="data_handling_h2">الخصوصية</h2></div>
+        <div class="section-title"><h2 data-key="data_handling_h2">الخصوصية وحماية البيانات</h2></div>
         <div class="features-grid" style="max-width: 900px; margin: 0 auto; grid-template-columns: 1fr;">
             <div class="feature-card" style="text-align: center;">
-                <p data-key="data_handling_p">خصوصيتك هي أولويتنا في لاند تشات.</p>
-                <h3 data-key="data_deletion_h3" style="margin-top: 2rem;">حذف البيانات</h3>
-                <p data-key="data_deletion_p">يمكنك حذف حسابك وكافة بياناتك بضغطة زر واحدة.</p>
+                <p data-key="data_handling_p">نحن في لاند تشات نلتزم بحماية خصوصيتك ولا نجمع إلا الضروري من البيانات.</p>
+                <h3 data-key="data_deletion_h3" style="margin-top: 2rem;">طلب حذف الحساب</h3>
+                <p data-key="data_deletion_p">يمكنك حذف حسابك وكافة البيانات المرتبطة به نهائياً بضغطة زر من التطبيق.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-links"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="download/">Download</a></div>
+        <div class="footer-links">
+            <a href="privacy/">Privacy Policy</a>
+            <a href="terms/">Terms of Service</a>
+            <a href="download/">Download</a>
+        </div>
         <p data-key="footer_copy">© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
