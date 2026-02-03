@@ -161,9 +161,19 @@ nav {
     position: relative;
 }
 
+/* === التعديل الجديد: إضافة خلفية زجاجية للنصوص لتكون مقروءة === */
 .hero-content {
     max-width: 850px;
     z-index: 10;
+    background: rgba(2, 6, 23, 0.75); /* خلفية داكنة شفافة */
+    backdrop-filter: blur(12px);      /* تأثير التغبيش */
+    -webkit-backdrop-filter: blur(12px);
+    padding: 3rem;                    /* هوامش داخلية */
+    border-radius: 24px;              /* حواف دائرية */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* حدود مضيئة */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5); /* ظل للصندوق */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-content h1 {
@@ -171,15 +181,17 @@ nav {
     font-weight: 900;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* ظل للنص لزيادة الوضوح */
 }
 
 .hero-content p {
     font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9); /* زيادة بياض النص */
     margin-bottom: 2.5rem;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 /* الأزرار */
@@ -278,7 +290,8 @@ footer p {
 
 /* الهواتف المحمولة */
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.8rem; }
+    .hero-content { padding: 2rem; margin: 0 15px; } /* تعديل للهاتف */
+    .hero-content h1 { font-size: 2.2rem; }
     .hero-content p { font-size: 1.1rem; }
     nav { padding: 15px 5%; }
     .logo { font-size: 1.3rem; }
