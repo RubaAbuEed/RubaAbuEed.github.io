@@ -1,13 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - لاند تشات</title>
+    <title>سياسة الخصوصية - Privacy Policy | Land Chat</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html[lang="ar"] .en-content { display: none; }
+        html[lang="en"] .ar-content { display: none; }
+        html[lang="en"] .legal-content { text-align: left; direction: ltr; }
+        html[lang="en"] .legal-content li::before { left: -1.5rem; right: auto; content: '❄'; position: absolute; color: var(--accent-pink); }
+    </style>
 </head>
 
 <body class="legal-page">
@@ -17,125 +22,162 @@
             <span class="logo">LAND CHAT</span>
         </div>
         <ul class="nav-links">
-            <li><a href="../index.html">الرئيسية</a></li>
-            <li><a href="../download/">التحميل</a></li>
+            <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+            <li><a href="../download/" data-key="nav_download">التحميل</a></li>
         </ul>
+        <button class="lang-toggle" id="langToggle">English</button>
     </nav>
 
     <main class="legal-container">
         <div class="legal-content">
-            <h1>سياسة الخصوصية | Privacy Policy</h1>
-            <p class="last-updated">آخر تحديث: 30 يناير 2026</p>
+            
+            <div class="ar-content">
+                <h1>سياسة الخصوصية | Privacy Policy</h1>
+                <p class="last-updated">آخر تحديث: 30 يناير 2026</p>
 
-            <section>
-                <h2>1. مقدمة</h2>
-                <p>تم بناء تطبيق Land Chat (لاند تشات) كتطبيق مجاني/مدفوع (حسب الخطة). يتم تقديم هذه الخدمة من قبل Land Chat "كما هي".
-                    تُستخدم هذه الصفحة لإعلام الزوار بخصوص سياساتنا المتعلقة بجمع المعلومات الشخصية واستخدامها والكشف
-                    عنها إذا قرر أي شخص استخدام خدمتنا.</p>
-                <p>إذا اخترت استخدام خدمتنا، فإنك توافق على جمع المعلومات واستخدامها فيما يتعلق بهذه السياسة. يتم
-                    استخدام المعلومات الشخصية التي نجمعها لتوفير الخدمة وتحسينها. لن نستخدم أو نشارك معلوماتك مع أي شخص
-                    باستثناء ما هو موضح في سياسة الخصوصية هذه.</p>
-            </section>
+                <section>
+                    <h2>1. مقدمة</h2>
+                    <p>تم بناء تطبيق Land Chat (لاند تشات) كتطبيق مجاني/مدفوع. يتم تقديم هذه الخدمة من قبل لاند تشات "كما هي". تُستخدم هذه الصفحة لإعلام الزوار بخصوص سياساتنا المتعلقة بجمع المعلومات الشخصية واستخدامها والكشف عنها إذا قرر أي شخص استخدام خدمتنا.</p>
+                    <p>إذا اخترت استخدام خدمتنا، فإنك توافق على جمع المعلومات واستخدامها فيما يتعلق بهذه السياسة. يتم استخدام المعلومات الشخصية التي نجمعها لتوفير الخدمة وتحسينها.</p>
+                </section>
 
-            <section>
-                <h2>2. جمع المعلومات واستخدامها</h2>
-                <p>للحصول على تجربة أفضل أثناء استخدام خدمتنا، قد نطلب منك تزويدنا ببعض المعلومات التعريفية الشخصية، بما
-                    في ذلك على سبيل المثال لا الحصر:</p>
-                <ul>
-                    <li><strong>معلومات الحساب:</strong> رقم الهاتف، عنوان البريد الإلكتروني، والاسم المستعار وصورتك.
-                    </li>
-                    <li><strong>معلومات الجهاز:</strong> معرف الجهاز (Hardware ID) وعنوان الـ IP لضمان الأمان.</li>
-                </ul>
-                <p>سيتم الاحتفاظ بالمعلومات التي نطلبها واستخدامها كما هو موضح في سياسة الخصوصية هذه.</p>
-                <div class="data-box">
-                    <h3>خدمات الطرف الثالث</h3>
-                    <p>يستخدم التطبيق خدمات طرف ثالث قد تجمع معلومات تستخدم لتحديد هويتك. رابط لسياسة الخصوصية لمقدمي
-                        خدمات الطرف الثالث المستخدمين في التطبيق:</p>
+                <section>
+                    <h2>2. جمع المعلومات واستخدامها</h2>
+                    <p>للحصول على تجربة أفضل أثناء استخدام خدمتنا، قد نطلب منك تزويدنا ببعض المعلومات التعريفية الشخصية:</p>
                     <ul>
-                        <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a>
-                        </li>
-                        <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics
-                                for Firebase</a></li>
+                        <li><strong>معلومات الحساب:</strong> رقم الهاتف، عنوان البريد الإلكتروني، والاسم المستعار وصورتك.</li>
+                        <li><strong>معلومات الجهاز:</strong> معرف الجهاز (Hardware ID) وعنوان الـ IP لضمان الأمان.</li>
                     </ul>
-                </div>
-            </section>
+                    <div class="data-box">
+                        <h3>خدمات الطرف الثالث</h3>
+                        <p>يستخدم التطبيق خدمات طرف ثالث قد تجمع معلومات تستخدم لتحديد هويتك:</p>
+                        <ul>
+                            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+                            <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section>
-                <h2>3. بيانات السجل (Log Data)</h2>
-                <p>نريد إخبارك أنه كلما استخدمت خدمتنا، وفي حالة حدوث خطأ في التطبيق، نقوم بجمع بيانات ومعلومات (من خلال
-                    منتجات طرف ثالث) على هاتفك تسمى بيانات السجل (Log Data). قد تتضمن بيانات السجل هذه معلومات مثل عنوان
-                    بروتوكول الإنترنت ("IP") الخاص بجهازك، واسم الجهاز، وإصدار نظام التشغيل، وتكوين التطبيق عند استخدام
-                    خدمتنا، ووقت وتاريخ استخدامك للخدمة، وإحصاءات أخرى.</p>
-            </section>
+                <section>
+                    <h2>3. بيانات السجل (Log Data)</h2>
+                    <p>في حالة حدوث خطأ في التطبيق، نقوم بجمع بيانات ومعلومات على هاتفك تسمى بيانات السجل. قد تتضمن هذه المعلومات عنوان الـ IP الخاص بجهازك، واسم الجهاز، وإصدار نظام التشغيل، ووقت وتاريخ الاستخدام.</p>
+                </section>
 
-            <section>
-                <h2>4. ملفات تعريف الارتباط (Cookies)</h2>
-                <p>ملفات تعريف الارتباط هي ملفات تحتوي على كمية صغيرة من البيانات التي يتم استخدامها عادةً كمعرفات فريدة
-                    مجهولة الهوية. يتم إرسالها إلى متصفحك من مواقع الويب التي تزورها ويتم تخزينها على الذاكرة الداخلية
-                    لجهازك.</p>
-                <p>لا تستخدم هذه الخدمة "ملفات تعريف الارتباط" هذه بشكل صريح. ومع ذلك، قد يستخدم التطبيق كودًا ومكتبات
-                    تابعة لجهات خارجية تستخدم "ملفات تعريف الارتباط" لجمع المعلومات وتحسين خدماتها. لديك الخيار إما قبول
-                    أو رفض ملفات تعريف الارتباط هذه ومعرفة متى يتم إرسال ملف تعريف الارتباط إلى جهازك. إذا اخترت رفض
-                    ملفات تعريف الارتباط الخاصة بنا، فقد لا تتمكن من استخدام بعض أجزاء هذه الخدمة.</p>
-            </section>
+                <section>
+                    <h2>4. ملفات تعريف الارتباط (Cookies)</h2>
+                    <p>لا تستخدم هذه الخدمة ملفات تعريف الارتباط بشكل صريح. ومع ذلك، قد يستخدم التطبيق كودًا ومكتبات تابعة لجهات خارجية تستخدمها لجمع المعلومات. لديك الخيار بقبولها أو رفضها.</p>
+                </section>
 
-            <section>
-                <h2>5. مقدمو الخدمة</h2>
-                <p>قد نقوم بتوظيف شركات وأفراد من جهات خارجية للأسباب التالية:</p>
-                <ul>
-                    <li>لتسهيل خدمتنا؛</li>
-                    <li>لتقديم الخدمة نيابة عنا؛</li>
-                    <li>لأداء خدمات متعلقة بالخدمة؛ أو</li>
-                    <li>لمساعدتنا في تحليل كيفية استخدام خدمتنا.</li>
-                </ul>
-                <p>نريد إبلاغ مستخدمي هذه الخدمة أن هذه الأطراف الثالثة لديها حق الوصول إلى معلوماتك الشخصية. والسبب هو
-                    أداء المهام الموكلة إليهم نيابة عنا. ومع ذلك، فهم ملزمون بعدم الكشف عن المعلومات أو استخدامها لأي
-                    غرض آخر.</p>
-            </section>
+                <section>
+                    <h2>5. مقدمو الخدمة</h2>
+                    <p>قد نقوم بتوظيف شركات خارجية لتسهيل خدمتنا، أو تقديم الخدمة نيابة عنا، أو مساعدتنا في تحليل كيفية استخدام الخدمة. هذه الأطراف لها حق الوصول لمعلوماتك لأداء مهامها فقط وهي ملزمة بعدم الكشف عنها.</p>
+                </section>
 
-            <section>
-                <h2>6. الأمان</h2>
-                <p>نحن نقدر ثقتك في تزويدنا بمعلوماتك الشخصية، وبالتالي نسعى جاهدين لاستخدام وسائل مقبولة تجاريًا
-                    لحمايتها. تذكر أنه لا توجد وسيلة نقل عبر الإنترنت أو طريقة تخزين إلكتروني آمنة وموثوقة بنسبة 100٪،
-                    ولا يمكننا ضمان أمانها المطلق، لكننا نستخدم تشفير End-to-End للرسائل لضمان أعلى درجات الخصوصية.</p>
-            </section>
+                <section>
+                    <h2>6. الأمان</h2>
+                    <p>نحن نقدر ثقتك ونسعى لحماية معلوماتك بوسائل مقبولة تجاريًا. تذكر أنه لا توجد وسيلة نقل عبر الإنترنت آمنة 100%، لكننا نستخدم تشفير End-to-End للرسائل.</p>
+                </section>
 
-            <section>
-                <h2>7. روابط لمواقع أخرى</h2>
-                <p>قد تحتوي هذه الخدمة على روابط لمواقع أخرى. إذا قمت بالنقر فوق رابط جهة خارجية، فسيتم توجيهك إلى هذا
-                    الموقع. لاحظ أن هذه المواقع الخارجية لا يتم تشغيلها بواسطتنا. لذلك، ننصحك بشدة بمراجعة سياسة
-                    الخصوصية لهذه المواقع. ليس لدينا أي سيطرة ولا نتحمل أي مسؤولية عن المحتوى أو سياسات الخصوصية أو
-                    الممارسات الخاصة بأي مواقع أو خدمات تابعة لجهات خارجية.</p>
-            </section>
+                <section>
+                    <h2>7. روابط لمواقع أخرى</h2>
+                    <p>قد تحتوي هذه الخدمة على روابط لمواقع أخرى. إذا قمت بالنقر فوق رابط جهة خارجية، فسيتم توجيهك إلى هذا الموقع. نحن لا نتحمل مسؤولية المحتوى أو السياسات الخاصة بتلك المواقع.</p>
+                </section>
 
-            <section>
-                <h2>8. خصوصية الأطفال</h2>
-                <p>لا تخاطب هذه الخدمات أي شخص يقل عمره عن 13 عامًا. نحن لا نجمع عن علم معلومات تعريف شخصية من الأطفال
-                    دون سن 13 عامًا. في حالة اكتشافنا أن طفلاً أقل من 13 عامًا قد زودنا بمعلومات شخصية، نقوم بحذفها
-                    فورًا من خوادمنا. إذا كنت والدًا أو وصيًا وكنت تعلم أن طفلك قد زودنا بمعلومات شخصية، فيرجى الاتصال
-                    بنا حتى نتمكن من اتخاذ الإجراءات اللازمة.</p>
-            </section>
+                <section>
+                    <h2>8. خصوصية الأطفال</h2>
+                    <p>لا تخاطب هذه الخدمات أي شخص يقل عمره عن 13 عامًا. إذا اكتشفنا أن طفلاً زودنا بمعلومات شخصية، نقوم بحذفها فورًا.</p>
+                </section>
 
-            <section>
-                <h2>9. حذف البيانات</h2>
-                <div class="data-box">
-                    <p>لك الحق الكامل في مسح وجودك الرقمي لدينا. يمكنك حذف حسابك نهائياً من إعدادات التطبيق، وسيتم مسح
-                        كافة الرسائل والبيانات من خوادمنا.</p>
-                </div>
-            </section>
+                <section>
+                    <h2>9. حذف البيانات</h2>
+                    <div class="data-box important">
+                        <p>لك الحق الكامل في مسح وجودك الرقمي لدينا. يمكنك حذف حسابك نهائياً من إعدادات التطبيق، وسيتم مسح كافة الرسائل والبيانات من خوادمنا.</p>
+                    </div>
+                </section>
 
-            <section>
-                <h2>10. التغييرات على سياسة الخصوصية هذه</h2>
-                <p>قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. لذلك، يُنصح بمراجعة هذه الصفحة بشكل دوري لمعرفة
-                    أي تغييرات. سنقوم بإعلامك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة.</p>
-                <p>تسري هذه السياسة اعتبارًا من 2026-01-30</p>
-            </section>
+                <section>
+                    <h2>10. التغييرات على السياسة</h2>
+                    <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. ننصحك بمراجعة هذه الصفحة دوريًا. تسري هذه السياسة اعتبارًا من 2026-01-30.</p>
+                </section>
+            </div>
+
+            <div class="en-content">
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Last Updated: January 30, 2026</p>
+
+                <section>
+                    <h2>1. Introduction</h2>
+                    <p>Land Chat app is built as a Free/Freemium app. This SERVICE is provided by Land Chat at no cost and is intended for use as is.</p>
+                    <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy.</p>
+                </section>
+
+                <section>
+                    <h2>2. Information Collection and Use</h2>
+                    <p>For a better experience, we may require you to provide us with certain personally identifiable information:</p>
+                    <ul>
+                        <li><strong>Account Info:</strong> Phone number, email address, nickname, and profile picture.</li>
+                        <li><strong>Device Info:</strong> Hardware ID and IP address for security purposes.</li>
+                    </ul>
+                    <div class="data-box">
+                        <h3>Third-Party Services</h3>
+                        <p>The app does use third-party services that may collect information used to identify you:</p>
+                        <ul>
+                            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+                            <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>3. Log Data</h2>
+                    <p>Whenever you use our Service, in a case of an error in the app, we collect data and information on your phone called Log Data. This may include your IP address, device name, and OS version.</p>
+                </section>
+
+                <section>
+                    <h2>4. Cookies</h2>
+                    <p>This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies”. You have the option to accept or refuse them.</p>
+                </section>
+
+                <section>
+                    <h2>5. Service Providers</h2>
+                    <p>We may employ third-party companies to facilitate our Service, provide the Service on our behalf, or perform Service-related services. These parties have access to your info only to perform these tasks.</p>
+                </section>
+
+                <section>
+                    <h2>6. Security</h2>
+                    <p>We value your trust and strive to use commercially acceptable means of protecting your info. We use End-to-End encryption for messages to ensure maximum privacy.</p>
+                </section>
+
+                <section>
+                    <h2>7. Links to Other Sites</h2>
+                    <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. We have no control over and assume no responsibility for the content of these sites.</p>
+                </section>
+
+                <section>
+                    <h2>8. Children’s Privacy</h2>
+                    <p>These Services do not address anyone under the age of 13. If we discover that a child under 13 has provided us with personal info, we immediately delete it.</p>
+                </section>
+
+                <section>
+                    <h2>9. Data Deletion</h2>
+                    <div class="data-box important">
+                        <p>You have the full right to remove your digital footprint. You can permanently delete your account from the app settings, which will erase all messages and data from our servers.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>10. Changes to This Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically. This policy is effective as of 2026-01-30.</p>
+                </section>
+            </div>
+
         </div>
     </main>
 
     <footer>
-        <p>© 2026 لاند تشات. جميع الحقوق محفوظة.</p>
+        <p>© 2026 Land Chat. All rights reserved.</p>
     </footer>
-</body>
 
+    <script src="../js/main.js"></script>
+</body>
 </html>
