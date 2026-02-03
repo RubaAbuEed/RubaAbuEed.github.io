@@ -6,16 +6,14 @@
     <title>شروط الاستخدام - Land Chat</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .light-matrix { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: #020617; overflow: hidden; }
         .light-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; animation: floatOrb 20s infinite alternate ease-in-out; }
         .orb-1 { width: 500px; height: 500px; background: rgba(14, 165, 233, 0.15); bottom: -10%; right: -5%; }
         @keyframes floatOrb { 0% { transform: translate(0, 0); } 100% { transform: translate(-50px, -50px); } }
-        .legal-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 3.5rem; margin: 100px auto; max-width: 1000px; color: #fff; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .legal-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 3.5rem; margin: 100px auto; max-width: 1000px; color: #fff; }
         h2 { color: var(--primary-light); margin-top: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.5rem; font-size: 1.4rem; }
-        p, li { color: rgba(255,255,255,0.85); line-height: 1.9; margin-bottom: 1.2rem; font-size: 1.05rem; }
-        ul { padding-right: 1.5rem; list-style-type: circle; }
+        p { color: rgba(255,255,255,0.85); line-height: 1.9; margin-bottom: 1.2rem; }
     </style>
 </head>
 <body>
@@ -33,34 +31,34 @@
     </nav>
 
     <main class="legal-card">
-        <h1>شروط وأحكام استخدام لاند تشات (Land Chat)</h1>
-        <p>باستخدامك لتطبيق <strong>لاند تشات</strong>، فإنك توافق تلقائياً على الشروط الموضحة أدناه. يرجى قراءتها بعناية لضمان استخدام آمن ومسؤول للمنصة.</p>
+        <h1 data-key="t_h1">شروط وأحكام استخدام لاند تشات</h1>
+        <p data-key="t_intro">باستخدامك لـ لاند تشات، فإنك توافق تلقائياً على الشروط التالية.</p>
         
-        <h2>1. شروط القبول</h2>
-        <p>بمجرد تنزيل التطبيق أو استخدامه، تنطبق هذه الشروط عليك تلقائياً. لا يُسمح لك بنسخ أو تعديل أي جزء من التطبيق أو علاماتنا التجارية.</p>
+        <h2 data-key="t_item1_h">1. شروط القبول</h2>
+        <p data-key="t_item1_p">بمجرد تنزيل التطبيق، تنطبق هذه الشروط عليك.</p>
 
-        <h2>2. التعديلات والرسوم</h2>
-        <p>نحن ملتزمون بجعل لاند تشات فعالاً قدر الإمكان، لذا نحتفظ بالحق في إجراء تغييرات أو فرض رسوم على خدمات معينة في المستقبل. لن نفرض أي رسوم دون توضيح الغرض منها مسبقاً.</p>
+        <h2 data-key="t_item2_h">2. التعديلات والرسوم</h2>
+        <p data-key="t_item2_p">نحتفظ بالحق في إجراء تغييرات أو فرض رسوم مستقبلاً.</p>
 
-        <h2>3. خصوصية وأمان البيانات</h2>
-        <p>يقوم التطبيق بمعالجة البيانات التي تقدمها لنا لتقديم الخدمة. تقع على عاتقك مسؤولية الحفاظ على أمان جهازك؛ لذا ننصح بعدم كسر حماية الهاتف (Root/Jailbreak) لأن ذلك يعرض بياناتك للخطر.</p>
+        <h2 data-key="t_item3_h">3. خصوصية وأمان البيانات</h2>
+        <p data-key="t_item3_p">يعالج التطبيق البيانات لتقديم الخدمة.</p>
 
-        <h2>4. خدمات الطرف الثالث</h2>
-        <p>يعتمد لاند تشات على خدمات طرف ثالث تخضع لشروطها الخاصة، ومنها:</p>
-        <ul>
-            <li>شروط وأحكام خدمات Google Play.</li>
-            <li>شروط Firebase Analytics لغايات تحسين الأداء.</li>
-        </ul>
+        <h2 data-key="t_item4_h">4. خدمات الطرف الثالث</h2>
+        <p data-key="t_item4_p">يعتمد لاند تشات على خدمات Google Play و Firebase.</p>
 
-        <h2>5. حدود المسؤولية</h2>
-        <p>تتطلب بعض وظائف التطبيق اتصالاً نشطاً بالإنترنت. لاند تشات ليست مسؤولة عن عدم عمل التطبيق بكامل وظائفه إذا كان السبب هو انقطاع الإنترنت أو نفاد رصيد البيانات لديك.</p>
+        <h2 data-key="t_item5_h">5. حدود المسؤولية</h2>
+        <p data-key="t_item5_p">لاند تشات ليست مسؤولة عن مشاكل الإنترنت.</p>
 
-        <h2>6. التحديثات والإنهاء</h2>
-        <p>قد نحتاج لتحديث التطبيق من وقت لآخر لضمان الأمان وتوافق النظام. كما نحتفظ بالحق في إنهاء تقديم الخدمة في أي وقت دون إشعار مسبق بالإنهاء.</p>
+        <h2 data-key="t_item6_h">6. التحديثات والإنهاء</h2>
+        <p data-key="t_item6_p">قد نقوم بتحديث التطبيق للأمان.</p>
 
-        <h2>7. التغييرات على الشروط</h2>
-        <p>نحتفظ بالحق في تحديث شروطنا وأحكامنا دورياً. لذا، يُنصح بمراجعة هذه الصفحة بانتظام للاطلاع على أي تغييرات؛ حيث تسري التعديلات فور نشرها.</p>
+        <h2 data-key="t_item7_h">7. التغييرات على الشروط</h2>
+        <p data-key="t_item7_p">نحتفظ بالحق في تحديث الشروط دورياً.</p>
     </main>
+
+    <footer>
+        <p data-key="footer_copy">© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
+    </footer>
 
     <script src="../js/main.js"></script>
 </body>
