@@ -107,10 +107,28 @@ const translations = {
     }
 };
 
-// وظيفة التحميل باستخدام الرابط المباشر الخاص بك
-function downloadLatestAPK() {
-    const directLink = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
-    window.location.href = directLink;
+// وظيفة التحميل الذكية التي تكتشف أحدث نسخة في Releases تلقائياً
+async function downloadLatestAPK() {
+    const repoOwner = "RubaAbuEed";
+    const repoName = "RubaAbuEed.github.io";
+    
+    try {
+        const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`);
+        const data = await response.json();
+        
+        // البحث عن ملف APK في الأصول المرفوعة
+        const apkFile = data.assets.find(asset => asset.name.endsWith('.apk'));
+        
+        if (apkFile) {
+            window.location.href = apkFile.browser_download_url;
+        } else {
+            alert("Latest APK not found in assets.");
+        }
+    } catch (error) {
+        console.error("API Error:", error);
+        // رابط احتياطي دائم في حال حدوث خطأ في الاتصال
+        window.location.href = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
+    }
 }
 
 function switchLanguage(lang) {
@@ -128,7 +146,6 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // إعداد زر تبديل اللغة
     const btn = document.getElementById('langToggle');
     if (btn) {
         btn.addEventListener('click', () => {
@@ -137,13 +154,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // لغة البداية (العربية)
     switchLanguage(localStorage.getItem('preferredLang') || 'ar');
     
-    // ربط كافة أزرار التحميل بالوظيفة البرمجية
+    // ربط كافة أزرار التحميل بالوظيفة الذكية
     document.querySelectorAll('.btn-primary, .btn-download-smart, [onclick="downloadLatestAPK()"]').forEach(el => {
         el.addEventListener('click', (e) => {
-            // نمنع السلوك الافتراضي إذا كان الزر يحتوي على رابط ميت وننفذ وظيفة التحميل
             if (el.tagName === 'A' && el.getAttribute('href') === '#') {
                 e.preventDefault();
             }
