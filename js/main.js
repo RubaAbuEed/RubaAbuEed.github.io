@@ -1,25 +1,43 @@
+/* Land Chat - Official Script 2026 */
 const translations = {
     en: {
-        // Navigation & General
-        'nav_home': 'Home', 'nav_features': 'Features', 'nav_download': 'Download', 'nav_privacy': 'Privacy',
+        // Navigation
+        'nav_home': 'Home',
+        'nav_download': 'Download',
+        'nav_privacy': 'Privacy',
+        'nav_terms': 'Terms',
         'footer_copy': '© 2026 Land Chat. All rights reserved.',
         
         // Hero Section
         'title': 'Land Chat - Premium Messaging Experience',
         'hero_h1': 'Fast. Secure. Fun.',
         'hero_p': 'Land Chat is the most secure messaging app, designed for a unique communication experience with military-grade encryption.',
-        'btn_download': 'Download Land Chat',
+        'btn_download': 'Download Land Chat Now',
 
         // Features Section
         'features_title': 'Core Features',
-        'feat_security_h3': 'Military Encryption', 'feat_security_p': 'Maximum protection for your messages using advanced encryption in Land Chat.',
-        'feat_calls_h3': 'HD Calls', 'feat_calls_p': 'Crystal clear voice and video calls even on slow networks.',
-        'feat_rooms_h3': 'Rooms & Communities', 'feat_rooms_p': 'Join thousands of public rooms or create your own community.',
-        'feat_gifts_h3': 'Gifts & Rewards', 'feat_gifts_p': 'Express yourself with premium virtual gifts and rewards.',
-        'feat_voice_h3': 'Voice Messages', 'feat_voice_p': 'Communicate faster with clear voice notes and playback control.',
-        'feat_levels_h3': 'Level System', 'feat_levels_p': 'Rank up and earn rare badges to be part of the elite.',
-        'feat_admin_h3': 'Pro Management', 'feat_admin_p': 'Powerful tools for moderators to manage rooms efficiently.',
-        'feat_files_h3': 'File Sharing', 'feat_files_p': 'Send high-quality files and photos at lightning speed.',
+        'feat_security_h3': 'Military Encryption',
+        'feat_security_p': 'Maximum protection for your messages using AES-256 advanced encryption to ensure total privacy.',
+        'feat_calls_h3': 'HD Calls',
+        'feat_calls_p': 'Crystal clear voice and video calls that work efficiently even on slow internet conditions.',
+        'feat_rooms_h3': 'Rooms & Communities',
+        'feat_rooms_p': 'Create your own community or join thousands of public rooms in Land Chat to connect with others.',
+        'feat_gifts_h3': 'Gifts & Rewards',
+        'feat_gifts_p': 'Express your feelings by sending premium virtual gifts and collect points to level up.',
+        'feat_voice_h3': 'Voice Messages',
+        'feat_voice_p': 'Communicate faster with clear voice notes and playback speed control for long messages.',
+        'feat_levels_h3': 'Level System',
+        'feat_levels_p': 'Earn rare badges and raise your rank to be among the elite users of Land Chat.',
+        'feat_admin_h3': 'Pro Management',
+        'feat_admin_p': 'Powerful tools for moderators to manage rooms, ban violators, and protect the community.',
+        'feat_files_h3': 'File Sharing',
+        'feat_files_p': 'Send large photos and files at lightning speed without losing original quality.',
+
+        // Privacy & Data
+        'data_handling_h2': 'Privacy & Data Protection',
+        'data_handling_p': 'At Land Chat, we are committed to protecting your privacy and only collect essential data to run the service.',
+        'data_deletion_h3': 'Account Deletion Request',
+        'data_deletion_p': 'You can permanently delete your account and all associated data with one click from the app settings.',
 
         // Download Page
         'd_h1': 'Download Land Chat',
@@ -27,52 +45,69 @@ const translations = {
         'd_btn': 'Direct Download (APK)',
         'd_secure': '100% Secure and Encrypted Version',
 
-        // Privacy Policy (10 Items)
+        // Privacy Policy (Full 10 Items)
         'p_h1': 'Full Privacy Policy',
-        'p_intro': 'Land Chat is committed to protecting your privacy and providing a secure communication environment. These ten points explain our strict policy.',
-        'p_item1_h': '1. Introduction', 'p_item1_p': 'Land Chat service is provided "as is" for secure messaging. By using the app, you agree to the policies described here.',
-        'p_item2_h': '2. Information Collection', 'p_item2_p': 'We may collect information like your phone number, nickname, and profile picture to enhance your experience.',
-        'p_item3_h': '3. Log Data', 'p_item3_p': 'In case of an error, we collect log data including IP address, device name, and OS version to fix the issue.',
-        'p_item4_h': '4. Third-Party Services', 'p_item4_p': 'The app uses Google Play Services and Firebase Analytics which may collect identifying information.',
-        'p_item5_h': '5. Cookies', 'p_item5_p': 'We do not use cookies explicitly, but third-party libraries might. You have the option to accept or refuse them.',
-        'p_item6_h': '6. Message Encryption', 'p_item6_p': 'We use End-to-End encryption. Neither Land Chat nor any third party can access your private conversations.',
-        'p_item7_h': '7. Service Providers', 'p_item7_p': 'We may employ external companies to facilitate our service. They have limited access only to perform specific tasks.',
-        'p_item8_h': '8. Children’s Privacy', 'p_item8_p': 'Our services do not address anyone under 13. We immediately delete any data discovered from children under this age.',
-        'p_item9_h': '9. Data Deletion Right', 'p_item9_p': 'You have full control. You can permanently delete your account and all data from the app settings.',
-        'p_item10_h': '10. Policy Changes', 'p_item10_p': 'We may update this policy periodically. We advise you to review this page regularly for any changes.',
+        'p_intro': 'Land Chat is committed to protecting your privacy. These ten points explain our strict policy.',
+        'p_item1_h': '1. Introduction', 'p_item1_p': 'Service provided for secure messaging as described.',
+        'p_item2_h': '2. Info Collection', 'p_item2_p': 'We collect phone numbers and nicknames for account setup.',
+        'p_item3_h': '3. Log Data', 'p_item3_p': 'Technical logs for error fixing and stability.',
+        'p_item4_h': '4. Third-Party', 'p_item4_p': 'Use of Google and Firebase for app performance.',
+        'p_item5_h': '5. Cookies', 'p_item5_p': 'Minimal use of identifiers for session management.',
+        'p_item6_h': '6. Encryption', 'p_item6_p': 'End-to-End encryption for all your private chats.',
+        'p_item7_h': '7. Providers', 'p_item7_p': 'Trusted partners only for infrastructure.',
+        'p_item8_h': '8. Children', 'p_item8_p': 'Strictly for users above 13 years old.',
+        'p_item9_h': '9. Deletion', 'p_item9_p': 'Your right to wipe all data permanently.',
+        'p_item10_h': '10. Updates', 'p_item10_p': 'Policy may change to improve protection.',
 
-        // Terms of Service (7 Items)
-        't_h1': 'Terms and Conditions',
-        't_intro': 'By using Land Chat, you automatically agree to the following terms. Please read them carefully.',
-        't_item1_h': '1. Acceptance of Terms', 't_item1_p': 'By downloading or using the app, these terms automatically apply to you. You are not allowed to copy or modify any part of the app.',
-        't_item2_h': '2. Modifications and Fees', 't_item2_p': 'We reserve the right to make changes or charge for services in the future. We will never charge without a clear explanation.',
-        't_item3_h': '3. Data Privacy and Security', 't_item3_p': 'The app processes data to provide the service. You are responsible for keeping your device secure; do not Root/Jailbreak your phone.',
-        't_item4_h': '4. Third-Party Services', 't_item4_p': 'Land Chat uses third-party services like Google Play and Firebase which have their own terms.',
-        't_item5_h': '5. Limitation of Liability', 't_item5_p': 'We are not responsible for app functionality issues caused by internet outages or lack of data balance.',
-        't_item6_h': '6. Updates and Termination', 't_item6_p': 'We may update the app for security or terminate the service at any time without prior notice.',
-        't_item7_h': '7. Changes to Terms', 't_item7_p': 'We reserve the right to update these terms periodically. Changes are effective immediately upon posting.'
+        // Terms of Service (Full 7 Items)
+        't_h1': 'Terms of Service',
+        't_intro': 'By using Land Chat, you agree to these terms. Read carefully.',
+        't_item1_h': '1. Acceptance', 't_item1_p': 'Terms apply automatically upon app usage.',
+        't_item2_h': '2. Fees', 't_item2_p': 'Service is free, any future fees will be notified.',
+        't_item3_h': '3. Security', 't_item3_p': 'User is responsible for device security.',
+        't_item4_h': '4. External Services', 't_item4_p': 'Compliance with Google Play terms.',
+        't_item5_h': '5. Liability', 't_item5_p': 'Not liable for connection issues.',
+        't_item6_h': '6. Termination', 't_item6_p': 'Right to stop service for violators.',
+        't_item7_h': '7. Changes', 't_item7_p': 'Terms updated periodically for legal compliance.'
     },
     ar: {
-        // التنقل والعام
-        'nav_home': 'الرئيسية', 'nav_features': 'المميزات', 'nav_download': 'التحميل', 'nav_privacy': 'الخصوصية',
+        // التنقل
+        'nav_home': 'الرئيسية',
+        'nav_download': 'التحميل',
+        'nav_privacy': 'الخصوصية',
+        'nav_terms': 'الشروط',
         'footer_copy': '© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.',
 
         // قسم الهيرو
         'title': 'لاند تشات - تجربة مراسلة متميزة',
         'hero_h1': 'سريع. آمن. ممتع.',
-        'hero_p': 'لاند تشات هو تطبيق المراسلة الأكثر أماناً، مصمم ليمنحك تجربة تواصل فريدة مع تشفير عسكري ومميزات حصرية.',
-        'btn_download': 'تحميل لاند تشات',
+        'hero_p': 'يقدم لاند تشات تجربة مراسلة خاصة مثالية مع تشفير تام ومميزات متميزة لضمان خصوصيتك.',
+        'btn_download': 'تحميل لاند تشات الآن',
 
-        // قسم المميزات
-        'features_title': 'كل ما تحتاجه في تطبيق واحد',
-        'feat_security_h3': 'تشفير عسكري', 'feat_security_p': 'حماية قصوى لرسائلك في لاند تشات باستخدام أحدث تقنيات التشفير.',
-        'feat_calls_h3': 'مكالمات عالية الدقة', 'feat_calls_p': 'مكالمات صوتية ومرئية فائقة الجودة تعمل حتى في ظروف الإنترنت الضعيفة.',
-        'feat_rooms_h3': 'غرف وتجمعات', 'feat_rooms_p': 'انضم إلى آلاف الغرف العامة أو أنشئ غرفتك الخاصة في لاند تشات.',
-        'feat_gifts_h3': 'هدايا وجوائز', 'feat_gifts_p': 'عبر عن مشاعرك بإرسال هدايا افتراضية مميزة واجمع النقاط.',
-        'feat_voice_h3': 'رسائل صوتية', 'feat_voice_p': 'تواصل أسرع عبر الرسائل الصوتية الواضحة مع ميزة تسريع التشغيل.',
-        'feat_levels_h3': 'نظام مستويات', 'feat_levels_p': 'احصل على أوسمة نادرة وارفع رتبتك لتكون من النخبة في لاند تشات.',
-        'feat_admin_h3': 'إدارة احترافية', 'feat_admin_p': 'أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين بكفاءة عالية.',
-        'feat_files_h3': 'مشاركة الملفات', 'feat_files_p': 'أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة.',
+        // المميزات
+        'features_title': 'المميزات الأساسية',
+        'feat_security_h3': 'تشفير عسكري',
+        'feat_security_p': 'حماية قصوى لرسائلك في لاند تشات باستخدام AES-256 لضمان الخصوصية التامة.',
+        'feat_calls_h3': 'مكالمات HD',
+        'feat_calls_p': 'مكالمات صوتية ومرئية فائقة الجودة تعمل بكفاءة عالية حتى في ظروف الإنترنت الضعيفة.',
+        'feat_rooms_h3': 'غرف وتجمعات',
+        'feat_rooms_p': 'أنشئ مجتمعك الخاص أو انضم لآلاف الغرف العامة في لاند تشات للتواصل مع الآخرين.',
+        'feat_gifts_h3': 'هدايا وجوائز',
+        'feat_gifts_p': 'عبر عن مشاعرك بإرسال هدايا افتراضية مميزة واجمع النقاط لرفع مستوى حسابك.',
+        'feat_voice_h3': 'رسائل صوتية',
+        'feat_voice_p': 'تواصل أسرع عبر الرسائل الصوتية الواضحة مع ميزة تسريع التشغيل للرسائل الطويلة.',
+        'feat_levels_h3': 'نظام مستويات',
+        'feat_levels_p': 'احصل على أوسمة نادرة وارفع رتبتك في التطبيق لتكون من نخبة مستخدمي لاند تشات.',
+        'feat_admin_h3': 'إدارة احترافية',
+        'feat_admin_p': 'أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين وحماية المجتمع من الرسائل المزعجة.',
+        'feat_files_h3': 'مشاركة الملفات',
+        'feat_files_p': 'أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة الأصلية للملفات.',
+
+        // الخصوصية
+        'data_handling_h2': 'الخصوصية وحماية البيانات',
+        'data_handling_p': 'نحن في لاند تشات نلتزم بحماية خصوصيتك ولا نجمع إلا الضروري من البيانات لتشغيل الخدمة.',
+        'data_deletion_h3': 'طلب حذف الحساب',
+        'data_deletion_p': 'يمكنك حذف حسابك وكافة البيانات المرتبطة به نهائياً بضغطة زر واحدة من داخل إعدادات التطبيق.',
 
         // صفحة التحميل
         'd_h1': 'تحميل لاند تشات',
@@ -80,7 +115,7 @@ const translations = {
         'd_btn': 'التحميل المباشر (APK)',
         'd_secure': 'إصدار آمن ومشفر 100%',
 
-        // سياسة الخصوصية (10 بنود)
+        // سياسة الخصوصية
         'p_h1': 'سياسة الخصوصية الشاملة لـ لاند تشات',
         'p_intro': 'تلتزم منصة لاند تشات بحماية خصوصيتك وتوفير بيئة آمنة للتواصل. توضح هذه البنود العشرة سياستنا الصارمة.',
         'p_item1_h': '1. مقدمة حول الخدمة', 'p_item1_p': 'يتم تقديم خدمة لاند تشات لغرض المراسلة الآمنة. باستخدامك للتطبيق، فإنك توافق على سياساتنا.',
@@ -94,7 +129,7 @@ const translations = {
         'p_item9_h': '9. الحق في حذف البيانات نهائياً', 'p_item9_p': 'يمكنك حذف حسابك وكافة الرسائل والملفات نهائياً من داخل إعدادات التطبيق بضغطة زر.',
         'p_item10_h': '10. التغييرات على هذه السياسة', 'p_item10_p': 'قد نقوم بتحديث السياسة دورياً، وننصحك بمراجعة هذه الصفحة بشكل مستمر.',
 
-        // شروط الاستخدام (7 بنود)
+        // شروط الاستخدام
         't_h1': 'شروط وأحكام استخدام لاند تشات',
         't_intro': 'باستخدامك لـ لاند تشات، فإنك توافق تلقائياً على الشروط التالية. يرجى قراءتها بعناية.',
         't_item1_h': '1. شروط القبول', 't_item1_p': 'بمجرد تنزيل التطبيق، تنطبق هذه الشروط عليك. لا يُسمح لك بنسخ أو تعديل أي جزء من التطبيق.',
@@ -107,37 +142,32 @@ const translations = {
     }
 };
 
-// وظيفة التحميل الذكية التي تكتشف أحدث نسخة في Releases تلقائياً
+// وظيفة التحميل الذكية من GitHub Releases
 async function downloadLatestAPK() {
     const repoOwner = "RubaAbuEed";
     const repoName = "RubaAbuEed.github.io";
-    
     try {
         const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`);
         const data = await response.json();
-        
-        // البحث عن ملف APK في الأصول المرفوعة
         const apkFile = data.assets.find(asset => asset.name.endsWith('.apk'));
-        
         if (apkFile) {
             window.location.href = apkFile.browser_download_url;
         } else {
-            alert("Latest APK not found in assets.");
+            window.location.href = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
         }
-    } catch (error) {
-        console.error("API Error:", error);
-        // رابط احتياطي دائم في حال حدوث خطأ في الاتصال
+    } catch (e) {
         window.location.href = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
     }
 }
 
+// تبديل اللغة
 function switchLanguage(lang) {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
-        if (translations[lang] && translations[lang][key]) { 
-            el.textContent = translations[lang][key]; 
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
         }
     });
     localStorage.setItem('preferredLang', lang);
@@ -145,24 +175,24 @@ function switchLanguage(lang) {
     if (btn) btn.textContent = lang === 'ar' ? 'English' : 'العربية';
 }
 
+// تشغيل الوظائف عند التحميل
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('langToggle');
-    if (btn) {
-        btn.addEventListener('click', () => {
-            const nextLang = document.documentElement.lang === 'ar' ? 'en' : 'ar';
-            switchLanguage(nextLang);
-        });
-    }
-
-    switchLanguage(localStorage.getItem('preferredLang') || 'ar');
-    
-    // ربط كافة أزرار التحميل بالوظيفة الذكية
-    document.querySelectorAll('.btn-primary, .btn-download-smart, [onclick="downloadLatestAPK()"]').forEach(el => {
-        el.addEventListener('click', (e) => {
-            if (el.tagName === 'A' && el.getAttribute('href') === '#') {
-                e.preventDefault();
-            }
-            downloadLatestAPK();
-        });
+    // تبديل اللغة
+    document.getElementById('langToggle')?.addEventListener('click', () => {
+        switchLanguage(document.documentElement.lang === 'ar' ? 'en' : 'ar');
     });
+
+    // القائمة المنسدلة
+    document.addEventListener('click', (e) => {
+        const menuBtn = document.getElementById('menuBtn');
+        const dropdown = document.getElementById('menuDropdown');
+        if (menuBtn && menuBtn.contains(e.target)) {
+            dropdown.classList.toggle('show-dropdown');
+        } else if (dropdown && !dropdown.contains(e.target)) {
+            dropdown.classList.remove('show-dropdown');
+        }
+    });
+
+    // لغة البداية
+    switchLanguage(localStorage.getItem('preferredLang') || 'ar');
 });
