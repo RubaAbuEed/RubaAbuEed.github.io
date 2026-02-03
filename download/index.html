@@ -4,109 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحميل لاند تشات - Download Land Chat</title>
+    <title data-key="title">تحميل لاند تشات - Land Chat</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
-        /* ستايل تبديل اللغة */
-        html[lang="ar"] .en-content { display: none; }
-        html[lang="en"] .ar-content { display: none; }
-        html[lang="en"] .download-section { direction: ltr; }
+        /* إضافة نظام الإضاءة لصفحة التحميل أيضاً */
+        .light-matrix { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: #020617; overflow: hidden; }
+        .light-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.3; animation: floatOrb 20s infinite alternate ease-in-out; }
+        .orb-1 { width: 400px; height: 400px; background: rgba(14, 165, 233, 0.2); top: 10%; right: 10%; }
+        @keyframes floatOrb { 0% { transform: translate(0, 0); } 100% { transform: translate(-30px, 50px); } }
+
+        .download-container {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 80px;
+        }
+
+        .download-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 24px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .apk-icon {
+            font-size: 4rem;
+            color: var(--primary-light);
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 0 15px var(--primary-light));
+        }
     </style>
 </head>
 
 <body>
+    <div class="light-matrix">
+        <div class="light-orb orb-1"></div>
+    </div>
+
     <nav>
         <div class="logo-container">
             <img src="../images/logo.webp" alt="Land Chat Logo" class="nav-logo">
             <span class="logo">LAND CHAT</span>
         </div>
         <ul class="nav-links">
-            <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
+            <li><a href="../" data-key="nav_home">الرئيسية</a></li>
             <li><a href="../privacy/" data-key="nav_privacy">الخصوصية</a></li>
         </ul>
         <button class="lang-toggle" id="langToggle">English</button>
     </nav>
 
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
+    <div class="download-container">
+        <div class="download-card">
+            <div class="apk-icon">
+                <i class="fab fa-android"></i>
+            </div>
+            <h1 data-key="btn_download" style="color: #fff; margin-bottom: 1rem;">تحميل لاند تشات</h1>
+            <p data-key="hero_p" style="color: rgba(255,255,255,0.7); margin-bottom: 2rem;">
+                احصل على أحدث نسخة من تطبيق لاند تشات مباشرة بصيغة APK.
+            </p>
+            
+            <button onclick="downloadLatestAPK()" class="btn-primary" style="width: 100%; font-size: 1.2rem; padding: 1rem;">
+                <i class="fas fa-file-download"></i> التحميل المباشر (APK)
+            </button>
+
+            <div style="margin-top: 2rem; font-size: 0.9rem; color: rgba(255,255,255,0.5);">
+                <p>إصدار آمن ومشفر 100%</p>
+            </div>
+        </div>
     </div>
 
-    <main class="download-section">
-        
-        <div class="ar-content">
-            <h1 style="font-size: 3rem; margin-bottom: 2rem;">جاهز للبدء؟</h1>
-            <p style="color: var(--text-muted); font-size: 1.2rem;">اختر النسخة المناسبة لجهازك واستمتع بأقصى درجات الأمان والخصوصية.</p>
-
-            <div class="download-cards">
-                <div class="download-card">
-                    <i class="fab fa-android" style="font-size: 3rem; color: #3DDC84; margin-bottom: 1rem;"></i>
-                    <h3>Google Play</h3>
-                    <p>النسخة الرسمية من المتجر</p>
-                    <a href="#" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem 1.5rem;">قريباً</a>
-                </div>
-                <div class="download-card">
-                    <i class="fas fa-file-apk" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3>Direct APK</h3>
-                    <p>تحميل مباشر للأندرويد</p>
-                    <a href="../icechat.apk" class="btn-primary" download style="margin-top: 1rem; padding: 0.8rem 1.5rem;">
-                        <i class="fas fa-file-download"></i> تحميل APK مباشر
-                    </a>
-                </div>
-                <div class="download-card">
-                    <i class="fab fa-apple" style="font-size: 3rem; color: #fff; margin-bottom: 1rem;"></i>
-                    <h3>App Store</h3>
-                    <p>نسخة الـ iOS</p>
-                    <a href="#" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem 1.5rem;">قريباً</a>
-                </div>
-            </div>
-
-            <div style="margin-top: 80px; padding: 2rem; background: var(--background-card); border-radius: 20px; border: 1px solid var(--glass-border); display: inline-block; max-width: 600px;">
-                <h3 style="color: var(--primary-light);">ملاحظة الأمان</h3>
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">تأكد دائماً من تحميل التطبيق من المصادر الرسمية فقط. لا نطلب منك أبداً كلمات مرورك الأصلية خارج التطبيق.</p>
-            </div>
-        </div>
-
-        <div class="en-content">
-            <h1 style="font-size: 3rem; margin-bottom: 2rem;">Ready to start?</h1>
-            <p style="color: var(--text-muted); font-size: 1.2rem;">Choose the right version for your device and enjoy maximum security and privacy.</p>
-
-            <div class="download-cards">
-                <div class="download-card">
-                    <i class="fab fa-android" style="font-size: 3rem; color: #3DDC84; margin-bottom: 1rem;"></i>
-                    <h3>Google Play</h3>
-                    <p>Official Store Version</p>
-                    <a href="#" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem 1.5rem;">Coming Soon</a>
-                </div>
-                <div class="download-card">
-                    <i class="fas fa-file-apk" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3>Direct APK</h3>
-                    <p>Direct Download for Android</p>
-                    <a href="../icechat.apk" class="btn-primary" download style="margin-top: 1rem; padding: 0.8rem 1.5rem;">
-                        <i class="fas fa-file-download"></i> Download APK
-                    </a>
-                </div>
-                <div class="download-card">
-                    <i class="fab fa-apple" style="font-size: 3rem; color: #fff; margin-bottom: 1rem;"></i>
-                    <h3>App Store</h3>
-                    <p>iOS Version</p>
-                    <a href="#" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem 1.5rem;">Coming Soon</a>
-                </div>
-            </div>
-
-            <div style="margin-top: 80px; padding: 2rem; background: var(--background-card); border-radius: 20px; border: 1px solid var(--glass-border); display: inline-block; max-width: 600px;">
-                <h3 style="color: var(--primary-light);">Security Note</h3>
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">Always ensure you download the app from official sources only. We never ask for your passwords outside the app.</p>
-            </div>
-        </div>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Land Chat. All rights reserved.</p>
+    <footer style="margin-top: auto;">
+        <p data-key="footer_copy">© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
     </footer>
 
     <script src="../js/main.js"></script>
