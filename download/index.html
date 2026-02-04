@@ -26,7 +26,7 @@
         }
 
         .download-page h1 {
-            font-size: 3rem;
+            font-size: clamp(2rem, 6vw, 3rem);
             font-weight: 900;
             margin-bottom: 1.5rem;
             background: linear-gradient(135deg, #fff 0%, var(--primary-light) 50%, var(--accent-cyan) 100%);
@@ -37,7 +37,7 @@
 
         .download-page>p {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 3vw, 1.2rem);
             max-width: 600px;
             margin-bottom: 3rem;
         }
@@ -120,8 +120,11 @@
         .download-card .btn-download {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             padding: 14px 28px;
+            width: 100%;
+            /* Better for touch on mobile */
             border-radius: 14px;
             font-size: 1rem;
             font-weight: 600;
@@ -186,20 +189,32 @@
         }
 
         @media (max-width: 768px) {
-            .download-page h1 {
-                font-size: 2rem;
-            }
-
-            .download-page>p {
-                font-size: 1rem;
+            .download-page {
+                padding: 100px 15px 60px;
             }
 
             .download-cards {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 20px;
             }
 
             .download-card {
                 padding: 30px 20px;
+            }
+
+            .security-note {
+                padding: 1.5rem;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .download-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .download-card .icon {
+                font-size: 3rem;
             }
         }
     </style>
