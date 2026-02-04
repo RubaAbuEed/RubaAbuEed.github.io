@@ -9,8 +9,10 @@
     <meta name="keywords" content="لاند تشات, Land Chat, تطبيق دردشة, مراسلة آمنة, تشفير">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700&family=Outfit:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/webp" href="/images/logo.webp">
 </head>
 
 <body>
@@ -40,8 +42,8 @@
 
     <!-- شريط التنقل -->
     <nav>
-        <a href="index.html" class="logo-container">
-            <img src="images/logo.webp" alt="Land Chat Logo" class="nav-logo">
+        <a href="/" class="logo-container">
+            <img src="/images/logo.webp" alt="Land Chat Logo" class="nav-logo">
             <span class="logo">LAND CHAT</span>
         </a>
         <div class="nav-controls">
@@ -49,27 +51,29 @@
             <div class="dropdown">
                 <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
                 <ul class="dropdown-content" id="menuDropdown">
-                    <li><a href="index.html" data-key="nav_home"><i class="fas fa-home"></i> الرئيسية</a></li>
-                    <li><a href="download/" data-key="nav_download"><i class="fas fa-download"></i> التحميل</a></li>
-                    <li><a href="privacy/" data-key="nav_privacy"><i class="fas fa-shield-halved"></i> الخصوصية</a></li>
-                    <li><a href="terms/" data-key="nav_terms"><i class="fas fa-file-contract"></i> الشروط</a></li>
+                    <li><a href="/" data-key="nav_home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="/download/" data-key="nav_download"><i class="fas fa-download"></i> التحميل</a></li>
+                    <li><a href="/privacy/" data-key="nav_privacy"><i class="fas fa-shield-halved"></i> الخصوصية</a>
+                    </li>
+                    <li><a href="/terms/" data-key="nav_terms"><i class="fas fa-file-contract"></i> الشروط</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- قسم الهيرو - محسّن لإظهار الصورة -->
-    <header class="hero" style="background: url('images/hero.webp') center top/cover no-repeat;">
+    <header class="hero" style="background: url('/images/hero.webp') center top/cover no-repeat;">
         <div class="hero-content">
             <h1 data-key="hero_h1">
                 <i class="fas fa-bolt" style="font-size: 0.8em; margin-left: 10px;"></i>
                 سريع. آمن. ممتع.
             </h1>
-            <p data-key="hero_p">يقدم لاند تشات تجربة مراسلة خاصة مثالية مع تشفير تام ومميزات متميزة لضمان خصوصيتك وأمان محادثاتك.</p>
-            <button onclick="downloadLatestAPK()" class="btn-primary" data-key="btn_download">
+            <p data-key="hero_p">يقدم لاند تشات تجربة مراسلة خاصة مثالية مع تشفير تام ومميزات متميزة لضمان خصوصيتك وأمان
+                محادثاتك.</p>
+            <a href="/download/" class="btn-primary" data-key="btn_download" style="text-decoration: none;">
                 <i class="fab fa-android"></i>
                 تحميل لاند تشات الآن
-            </button>
+            </a>
         </div>
     </header>
 
@@ -85,17 +89,20 @@
             <div class="feature-card">
                 <i class="fas fa-shield-halved"></i>
                 <h3 data-key="feat_security_h3">تشفير عسكري</h3>
-                <p data-key="feat_security_p">حماية قصوى لرسائلك في لاند تشات باستخدام AES-256 لضمان الخصوصية التامة.</p>
+                <p data-key="feat_security_p">حماية قصوى لرسائلك في لاند تشات باستخدام AES-256 لضمان الخصوصية التامة.
+                </p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-video"></i>
                 <h3 data-key="feat_calls_h3">مكالمات HD</h3>
-                <p data-key="feat_calls_p">مكالمات صوتية ومرئية فائقة الجودة تعمل بكفاءة عالية حتى في ظروف الإنترنت الضعيفة.</p>
+                <p data-key="feat_calls_p">مكالمات صوتية ومرئية فائقة الجودة تعمل بكفاءة عالية حتى في ظروف الإنترنت
+                    الضعيفة.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-users-rectangle"></i>
                 <h3 data-key="feat_rooms_h3">غرف وتجمعات</h3>
-                <p data-key="feat_rooms_p">أنشئ مجتمعك الخاص أو انضم لآلاف الغرف العامة في لاند تشات للتواصل مع الآخرين.</p>
+                <p data-key="feat_rooms_p">أنشئ مجتمعك الخاص أو انضم لآلاف الغرف العامة في لاند تشات للتواصل مع الآخرين.
+                </p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-gift"></i>
@@ -105,22 +112,26 @@
             <div class="feature-card">
                 <i class="fas fa-microphone-lines"></i>
                 <h3 data-key="feat_voice_h3">رسائل صوتية</h3>
-                <p data-key="feat_voice_p">تواصل أسرع عبر الرسائل الصوتية الواضحة مع ميزة تسريع التشغيل للرسائل الطويلة.</p>
+                <p data-key="feat_voice_p">تواصل أسرع عبر الرسائل الصوتية الواضحة مع ميزة تسريع التشغيل للرسائل الطويلة.
+                </p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-medal"></i>
                 <h3 data-key="feat_levels_h3">نظام مستويات</h3>
-                <p data-key="feat_levels_p">احصل على أوسمة نادرة وارفع رتبتك في التطبيق لتكون من نخبة مستخدمي لاند تشات.</p>
+                <p data-key="feat_levels_p">احصل على أوسمة نادرة وارفع رتبتك في التطبيق لتكون من نخبة مستخدمي لاند تشات.
+                </p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-user-shield"></i>
                 <h3 data-key="feat_admin_h3">إدارة احترافية</h3>
-                <p data-key="feat_admin_p">أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين وحماية المجتمع من الرسائل المزعجة.</p>
+                <p data-key="feat_admin_p">أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين وحماية المجتمع من الرسائل
+                    المزعجة.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-file-arrow-up"></i>
                 <h3 data-key="feat_files_h3">مشاركة الملفات</h3>
-                <p data-key="feat_files_p">أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة الأصلية للملفات.</p>
+                <p data-key="feat_files_p">أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة الأصلية
+                    للملفات.</p>
             </div>
         </div>
     </section>
@@ -153,15 +164,15 @@
     <!-- التذييل -->
     <footer>
         <div class="footer-links">
-            <a href="privacy/">
+            <a href="/privacy/">
                 <i class="fas fa-shield-halved"></i>
                 Privacy Policy
             </a>
-            <a href="terms/">
+            <a href="/terms/">
                 <i class="fas fa-file-contract"></i>
                 Terms of Service
             </a>
-            <a href="download/">
+            <a href="/download/">
                 <i class="fas fa-download"></i>
                 Download
             </a>
@@ -171,4 +182,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
