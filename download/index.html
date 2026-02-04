@@ -4,90 +4,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-key="d_h1">تحميل لاند تشات - Land Chat</title>
+    <title data-key="d_h1">تحميل لاند تشات - Download Land Chat</title>
+    <meta name="description" content="تحميل تطبيق لاند تشات - أحدث نسخة APK للأندرويد">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@400;600;700&family=Outfit:wght@400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/webp" href="../images/logo.webp">
+
     <style>
-        .download-container {
-            min-height: 85vh;
+        /* ستايلات صفحة التحميل */
+        .download-page {
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 120px 20px 80px;
+            text-align: center;
+        }
+
+        .download-page h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--primary-light) 50%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .download-page>p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 3rem;
+        }
+
+        .download-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+            margin-bottom: 4rem;
         }
 
         .download-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(25px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 4rem 2rem;
-            border-radius: 30px;
-            max-width: 600px;
-            width: 100%;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-            animation: cardFadeIn 0.8s ease-out;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
         }
 
-        @keyframes cardFadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+        .download-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--glass-border-strong), transparent);
         }
 
-        .apk-icon-box {
-            width: 100px;
-            height: 100px;
-            background: rgba(14, 165, 233, 0.1);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 2rem;
-            border: 1px solid rgba(14, 165, 233, 0.3);
+        .download-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-light);
+            box-shadow:
+                0 25px 50px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(14, 165, 233, 0.15);
+            background: var(--glass-bg-strong);
         }
 
-        .apk-icon-box i {
-            font-size: 3.5rem;
-            color: var(--primary-light);
-            filter: drop-shadow(0 0 10px var(--primary-light));
+        .download-card .icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: block;
         }
 
-        .download-info h1 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
+        .download-card .icon.android {
+            color: #3DDC84;
+        }
+
+        .download-card .icon.apple {
             color: #fff;
         }
 
-        .download-info p {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 2.5rem;
-            font-size: 1.1rem;
+        .download-card .icon.apk {
+            background: linear-gradient(135deg, var(--primary-light), var(--accent-cyan));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .security-badge {
-            margin-top: 2.5rem;
+        .download-card h3 {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .download-card p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-card .btn-download {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            padding: 10px 20px;
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.2);
-            border-radius: 50px;
-            color: #4ade80;
-            font-size: 0.9rem;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn-download.active {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+            color: white;
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+        }
+
+        .btn-download.active:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(14, 165, 233, 0.5);
+        }
+
+        .btn-download.disabled {
+            background: var(--glass-bg-strong);
+            color: rgba(255, 255, 255, 0.5);
+            border: 1px solid var(--glass-border);
+            cursor: not-allowed;
+        }
+
+        .security-note {
+            max-width: 600px;
+            padding: 2rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+        }
+
+        .security-note h3 {
+            color: var(--accent-cyan);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .security-note p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .download-page h1 {
+                font-size: 2rem;
+            }
+
+            .download-page>p {
+                font-size: 1rem;
+            }
+
+            .download-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .download-card {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!-- الخلفية المتحركة -->
     <div class="light-matrix">
         <div class="light-orb orb-1"></div>
+        <div class="light-orb orb-2"></div>
+        <div class="light-orb orb-3"></div>
     </div>
 
+    <!-- الفقاعات المشعة -->
+    <div class="bubbles-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="grid-overlay"></div>
+
+    <!-- شريط التنقل -->
     <nav>
-        <a href="../index.html" class="logo-container" style="text-decoration: none; display: flex; align-items: center;">
+        <a href="../index.html" class="logo-container">
             <img src="../images/logo.webp" alt="Land Chat Logo" class="nav-logo">
             <span class="logo">LAND CHAT</span>
         </a>
@@ -96,38 +240,89 @@
             <div class="dropdown">
                 <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
                 <ul class="dropdown-content" id="menuDropdown">
-                    <li><a href="../index.html" data-key="nav_home">الرئيسية</a></li>
-                    <li><a href="../download/" data-key="nav_download">التحميل</a></li>
-                    <li><a href="../privacy/" data-key="nav_privacy">الخصوصية</a></li>
-                    <li><a href="../terms/" data-key="nav_terms">الشروط</a></li>
+                    <li><a href="../index.html" data-key="nav_home"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="../privacy/" data-key="nav_privacy"><i class="fas fa-shield-halved"></i> الخصوصية</a>
+                    </li>
+                    <li><a href="../terms/" data-key="nav_terms"><i class="fas fa-file-contract"></i> الشروط</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="download-container">
-        <div class="download-card">
-            <div class="apk-icon-box">
-                <i class="fab fa-android"></i>
-            </div>
-            <div class="download-info">
-                <h1 data-key="d_h1">تحميل لاند تشات</h1>
-                <p data-key="d_p">احصل على أحدث نسخة من تطبيق لاند تشات مباشرة بصيغة APK لنظام الأندرويد.</p>
-                
-                <button onclick="downloadLatestAPK()" class="btn-primary" style="width: 100%; justify-content: center;">
-                    <i class="fas fa-cloud-download-alt"></i>
-                    <span data-key="d_btn">التحميل المباشر (APK)</span>
-                </button>
+    <!-- صفحة التحميل -->
+    <main class="download-page">
+        <h1 data-key="d_h1">
+            <i class="fas fa-download" style="margin-left: 15px;"></i>
+            تحميل لاند تشات
+        </h1>
+        <p data-key="d_p">احصل على أحدث نسخة من تطبيق لاند تشات مباشرة واستمتع بأقصى درجات الأمان والخصوصية.</p>
 
-                <div class="security-badge">
-                    <i class="fas fa-user-shield"></i>
-                    <span data-key="d_secure">إصدار آمن ومشفر 100%</span>
-                </div>
+        <div class="download-cards">
+            <!-- Google Play -->
+            <div class="download-card">
+                <i class="fab fa-google-play icon android"></i>
+                <h3>Google Play</h3>
+                <p>النسخة الرسمية من المتجر</p>
+                <button class="btn-download disabled">
+                    <i class="fas fa-clock"></i>
+                    قريباً
+                </button>
+            </div>
+
+            <!-- Direct APK -->
+            <div class="download-card">
+                <i class="fas fa-box-open icon apk"></i>
+                <h3>Direct APK</h3>
+                <p>تحميل مباشر للأندرويد</p>
+                <button onclick="downloadLatestAPK()" class="btn-download active" id="apkDownloadBtn">
+                    <i class="fab fa-android"></i>
+                    تحميل APK مباشر
+                </button>
+                <span class="version-badge" id="versionBadge" data-key="d_secure">
+                    <i class="fas fa-shield-check"></i>
+                    إصدار آمن ومشفر 100%
+                </span>
+            </div>
+
+            <!-- App Store -->
+            <div class="download-card">
+                <i class="fab fa-apple icon apple"></i>
+                <h3>App Store</h3>
+                <p>نسخة الـ iOS</p>
+                <button class="btn-download disabled">
+                    <i class="fas fa-clock"></i>
+                    قريباً
+                </button>
             </div>
         </div>
-    </div>
 
+        <!-- ملاحظة الأمان -->
+        <div class="security-note">
+            <h3>
+                <i class="fas fa-shield-halved"></i>
+                ملاحظة الأمان
+            </h3>
+            <p>تأكد دائماً من تحميل التطبيق من المصادر الرسمية فقط. لا نطلب منك أبداً كلمات مرورك الأصلية خارج التطبيق.
+                جميع النسخ موقعة رقمياً للتحقق من صحتها.</p>
+        </div>
+    </main>
+
+    <!-- التذييل -->
     <footer>
+        <div class="footer-links">
+            <a href="../privacy/">
+                <i class="fas fa-shield-halved"></i>
+                Privacy Policy
+            </a>
+            <a href="../terms/">
+                <i class="fas fa-file-contract"></i>
+                Terms of Service
+            </a>
+            <a href="../index.html">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+        </div>
         <p data-key="footer_copy">© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
     </footer>
 
