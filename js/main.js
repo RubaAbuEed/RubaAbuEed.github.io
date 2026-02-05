@@ -44,6 +44,9 @@ const translations = {
         'd_p': 'Get the latest version of Land Chat directly as an APK file.',
         'd_btn': 'Direct Download (APK)',
         'd_secure': '100% Secure and Encrypted Version',
+        'update_notice_title': 'Installation Tip',
+        'update_notice_msg': 'If you experience issues updating (like "Invalid Package"), please <b>uninstall the old version</b> first, then install this new one.',
+        'btn_ok': 'Got it',
 
         // Privacy Policy (Full 10 Items)
         'p_h1': 'Comprehensive Privacy Policy for Land Chat',
@@ -116,7 +119,11 @@ const translations = {
         'd_h1': 'تحميل لاند تشات',
         'd_p': 'احصل على أحدث نسخة من تطبيق لاند تشات مباشرة بصيغة APK.',
         'd_btn': 'التحميل المباشر (APK)',
+        'd_btn': 'التحميل المباشر (APK)',
         'd_secure': 'إصدار آمن ومشفر 100%',
+        'update_notice_title': 'نصيحة هامة للتثبيت',
+        'update_notice_msg': 'إذا واجهت مشكلة في تحديث التطبيق (مثل خطأ "الحزمة غير صالحة")، يرجى <b>حذف النسخة القديمة</b> من هاتفك أولاً، ثم تثبيت هذه النسخة الجديدة.',
+        'btn_ok': 'حسناً، فهمت',
 
         // سياسة الخصوصية
         'p_h1': 'سياسة الخصوصية الشاملة لـ لاند تشات',
@@ -158,11 +165,33 @@ async function downloadLatestAPK() {
         const apkFile = data.assets.find(asset => asset.name.endsWith('.apk'));
         if (apkFile) {
             window.location.href = apkFile.browser_download_url;
-        } else {
-            window.location.href = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
         }
+
+        // Show the instruction modal after a short delay
+        setTimeout(() => {
+            showUpdateModal();
+        }, 1000);
+
     } catch (e) {
         window.location.href = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
+        setTimeout(() => {
+            showUpdateModal();
+        }, 1000);
+    }
+}
+
+// Modal Functions
+function showUpdateModal() {
+    const modal = document.getElementById('updateModal');
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+}
+
+function closeUpdateModal() {
+    const modal = document.getElementById('updateModal');
+    if (modal) {
+        modal.style.display = 'none';
     }
 }
 
