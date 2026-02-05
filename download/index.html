@@ -341,7 +341,103 @@
         <p data-key="footer_copy">© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <!-- Update Instruction Modal -->
+    <div id="updateModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeUpdateModal()">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <h3 data-key="update_notice_title">نصيحة هامة للتثبيت</h3>
+            <p data-key="update_notice_msg">إذا واجهت مشكلة في تحديث التطبيق (مثل خطأ "الحزمة غير صالحة")، يرجى <b>حذف النسخة القديمة</b> من هاتفك أولاً، ثم تثبيت هذه النسخة الجديدة.</p>
+            <button class="btn-primary" onclick="closeUpdateModal()" data-key="btn_ok">حسناً، فهمت</button>
+        </div>
+    </div>
+
+    <!-- CSS for Modal -->
+    <style>
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 0.3s forwards;
+        }
+
+        .modal-content {
+            background: var(--glass-bg-strong);
+            border: 1px solid var(--glass-border);
+            padding: 2rem;
+            border-radius: 24px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            transform: scale(0.9);
+            animation: popIn 0.3s 0.1s forwards;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            color: var(--accent-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .modal-content h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .modal-content p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+        @keyframes popIn { to { transform: scale(1); } }
+    </style>
+
 </body>
 
 </html>
