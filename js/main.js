@@ -47,6 +47,15 @@ const translations = {
         'update_notice_title': 'Installation Tip',
         'update_notice_msg': 'If you experience issues updating (like "Invalid Package"), please <b>uninstall the old version</b> first, then install this new one.',
         'btn_ok': 'Got it',
+        'd_gp_title': 'Google Play',
+        'd_gp_desc': 'Official Store Version',
+        'd_soon': 'Coming Soon',
+        'd_apk_title': 'Direct APK',
+        'd_apk_desc': 'Direct Download for Android',
+        'd_ios_title': 'App Store',
+        'd_ios_desc': 'iOS Version',
+        'd_sec_title': 'Security Note',
+        'd_sec_msg': 'Always ensure you download the app from official sources only. We never ask for your original passwords outside the app. All versions are digitally signed for verification.',
 
         // Privacy Policy (Full 10 Items)
         'p_h1': 'Comprehensive Privacy Policy for Land Chat',
@@ -119,11 +128,19 @@ const translations = {
         'd_h1': 'تحميل لاند تشات',
         'd_p': 'احصل على أحدث نسخة من تطبيق لاند تشات مباشرة بصيغة APK.',
         'd_btn': 'التحميل المباشر (APK)',
-        'd_btn': 'التحميل المباشر (APK)',
         'd_secure': 'إصدار آمن ومشفر 100%',
         'update_notice_title': 'نصيحة هامة للتثبيت',
         'update_notice_msg': 'إذا واجهت مشكلة في تحديث التطبيق (مثل خطأ "الحزمة غير صالحة")، يرجى <b>حذف النسخة القديمة</b> من هاتفك أولاً، ثم تثبيت هذه النسخة الجديدة.',
         'btn_ok': 'حسناً، فهمت',
+        'd_gp_title': 'Google Play',
+        'd_gp_desc': 'النسخة الرسمية من المتجر',
+        'd_soon': 'قريباً',
+        'd_apk_title': 'Direct APK',
+        'd_apk_desc': 'تحميل مباشر للأندرويد',
+        'd_ios_title': 'App Store',
+        'd_ios_desc': 'نسخة الـ iOS',
+        'd_sec_title': 'ملاحظة الأمان',
+        'd_sec_msg': 'تأكد دائماً من تحميل التطبيق من المصادر الرسمية فقط. لا نطلب منك أبداً كلمات مرورك الأصلية خارج التطبيق. جميع النسخ موقعة رقمياً للتحقق من صحتها.',
 
         // سياسة الخصوصية
         'p_h1': 'سياسة الخصوصية الشاملة لـ لاند تشات',
@@ -202,7 +219,7 @@ function switchLanguage(lang) {
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
         if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
+            el.innerHTML = translations[lang][key];
         }
     });
     localStorage.setItem('preferredLang', lang);
