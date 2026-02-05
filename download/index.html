@@ -276,9 +276,9 @@
             <!-- Google Play -->
             <div class="download-card">
                 <i class="fab fa-google-play icon android"></i>
-                <h3>Google Play</h3>
-                <p>النسخة الرسمية من المتجر</p>
-                <button class="btn-download disabled">
+                <h3 data-key="d_gp_title">Google Play</h3>
+                <p data-key="d_gp_desc">النسخة الرسمية من المتجر</p>
+                <button class="btn-download disabled" data-key="d_soon">
                     <i class="fas fa-clock"></i>
                     قريباً
                 </button>
@@ -287,9 +287,9 @@
             <!-- Direct APK -->
             <div class="download-card">
                 <i class="fas fa-box-open icon apk"></i>
-                <h3>Direct APK</h3>
-                <p>تحميل مباشر للأندرويد</p>
-                <button onclick="downloadLatestAPK()" class="btn-download active" id="apkDownloadBtn">
+                <h3 data-key="d_apk_title">Direct APK</h3>
+                <p data-key="d_apk_desc">تحميل مباشر للأندرويد</p>
+                <button onclick="downloadLatestAPK()" class="btn-download active" id="apkDownloadBtn" data-key="d_btn">
                     <i class="fab fa-android"></i>
                     تحميل APK مباشر
                 </button>
@@ -302,9 +302,9 @@
             <!-- App Store -->
             <div class="download-card">
                 <i class="fab fa-apple icon apple"></i>
-                <h3>App Store</h3>
-                <p>نسخة الـ iOS</p>
-                <button class="btn-download disabled">
+                <h3 data-key="d_ios_title">App Store</h3>
+                <p data-key="d_ios_desc">نسخة الـ iOS</p>
+                <button class="btn-download disabled" data-key="d_soon">
                     <i class="fas fa-clock"></i>
                     قريباً
                 </button>
@@ -313,11 +313,12 @@
 
         <!-- ملاحظة الأمان -->
         <div class="security-note">
-            <h3>
+            <h3 data-key="d_sec_title">
                 <i class="fas fa-shield-halved"></i>
                 ملاحظة الأمان
             </h3>
-            <p>تأكد دائماً من تحميل التطبيق من المصادر الرسمية فقط. لا نطلب منك أبداً كلمات مرورك الأصلية خارج التطبيق.
+            <p data-key="d_sec_msg">تأكد دائماً من تحميل التطبيق من المصادر الرسمية فقط. لا نطلب منك أبداً كلمات مرورك
+                الأصلية خارج التطبيق.
                 جميع النسخ موقعة رقمياً للتحقق من صحتها.</p>
         </div>
     </main>
@@ -325,15 +326,15 @@
     <!-- التذييل -->
     <footer>
         <div class="footer-links">
-            <a href="/privacy/">
+            <a href="/privacy/" data-key="nav_privacy">
                 <i class="fas fa-shield-halved"></i>
                 Privacy Policy
             </a>
-            <a href="/terms/">
+            <a href="/terms/" data-key="nav_terms">
                 <i class="fas fa-file-contract"></i>
                 Terms of Service
             </a>
-            <a href="/">
+            <a href="/" data-key="nav_home">
                 <i class="fas fa-home"></i>
                 Home
             </a>
