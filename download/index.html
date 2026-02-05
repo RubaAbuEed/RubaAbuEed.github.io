@@ -349,7 +349,8 @@
                 <i class="fas fa-info-circle"></i>
             </div>
             <h3 data-key="update_notice_title">نصيحة هامة للتثبيت</h3>
-            <p data-key="update_notice_msg">إذا واجهت مشكلة في تحديث التطبيق (مثل خطأ "الحزمة غير صالحة")، يرجى <b>حذف النسخة القديمة</b> من هاتفك أولاً، ثم تثبيت هذه النسخة الجديدة.</p>
+            <p data-key="update_notice_msg">إذا واجهت مشكلة في تحديث التطبيق (مثل خطأ "الحزمة غير صالحة")، يرجى <b>حذف
+                    النسخة القديمة</b> من هاتفك أولاً، ثم تثبيت هذه النسخة الجديدة.</p>
             <button class="btn-primary" onclick="closeUpdateModal()" data-key="btn_ok">حسناً، فهمت</button>
         </div>
     </div>
@@ -384,7 +385,7 @@
             position: relative;
             transform: scale(0.9);
             animation: popIn 0.3s 0.1s forwards;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
         }
 
         .modal-icon {
@@ -429,15 +430,25 @@
             cursor: pointer;
             transition: transform 0.2s;
         }
-        
+
         .btn-primary:hover {
             transform: scale(1.05);
         }
 
-        @keyframes fadeIn { to { opacity: 1; } }
-        @keyframes popIn { to { transform: scale(1); } }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes popIn {
+            to {
+                transform: scale(1);
+            }
+        }
     </style>
 
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
