@@ -57,18 +57,18 @@ const translations = {
         'p_item7_h': '7. Data Retention', 'p_item7_p': 'We retain your data only as long as your account is active. Message logs and media are stored securely on our backend servers to sync across your devices.',
         'p_item8_h': '8. Children Privacy', 'p_item8_p': 'Land Chat is not intended for children under 13. We do not knowingly collect data from children. If we discover such data, we delete it immediately.',
         'p_item9_h': '9. Account Deletion Rights', 'p_item9_p': 'You have the absolute right to delete your account and all associated data permanently via the "Delete Account" button in the App Settings.',
-        'p_item10_h': '10. Contact & Support', 'p_item10_p': 'For privacy inquiries or data removal requests, please contact us at support@landchat.com or via the in-app support center.',
+        'p_item10_h': '10. Contact & Support', 'p_item10_p': 'For privacy inquiries or data removal requests, please contact us at admin@landchat.me or via the in-app support center.',
 
         // Terms of Service (Full 7 Items)
         't_h1': 'Terms of Service',
-        't_intro': 'By using Land Chat, you agree to these terms. Read carefully.',
-        't_item1_h': '1. Acceptance', 't_item1_p': 'Terms apply automatically upon app usage.',
-        't_item2_h': '2. Fees', 't_item2_p': 'Service is free, any future fees will be notified.',
-        't_item3_h': '3. Security', 't_item3_p': 'User is responsible for device security.',
-        't_item4_h': '4. External Services', 't_item4_p': 'Compliance with Google Play terms.',
-        't_item5_h': '5. Liability', 't_item5_p': 'Not liable for connection issues.',
-        't_item6_h': '6. Termination', 't_item6_p': 'Right to stop service for violators.',
-        't_item7_h': '7. Changes', 't_item7_p': 'Terms updated periodically for legal compliance.'
+        't_intro': 'By using Land Chat, you agree to these legally binding terms. Please read them carefully.',
+        't_item1_h': '1. Acceptance of Terms', 't_item1_p': 'By creating an account or using Land Chat, you agree to be bound by these terms. If you do not agree, you must cease use immediately.',
+        't_item2_h': '2. User Conduct & Content', 't_item2_p': 'Users are responsible for all activity on their accounts. Harassment, hate speech, illegal activities, and distribution of malicious content are strictly prohibited and will result in immediate termination.',
+        't_item3_h': '3. Service Availability', 't_item3_p': 'While we strive for 100% uptime, Land Chat is provided "as is". We are not liable for any service interruptions, data loss, or technical failures.',
+        't_item4_h': '4. Virtual Goods & Gems', 't_item4_p': 'Virtual items (Gems/Gifts) have no real-world monetary value and are non-refundable. We reserve the right to manage/revoke virtual balances in cases of fraud or abuse.',
+        't_item5_h': '5. Limitation of Liability', 't_item5_p': 'Land Chat and its developers shall not be held liable for any direct, indirect, or incidental damages resulting from your use of the application.',
+        't_item6_h': '6. Account Termination', 't_item6_p': 'We reserve the right to suspend or delete accounts that violate our community guidelines or engage in suspicious activities without prior notice.',
+        't_item7_h': '7. Governing Law & Updates', 't_item7_p': 'These terms are governed by applicable local and international laws. We may update these terms periodically to reflect new regulations and features.',
     },
     ar: {
         // التنقل
@@ -127,18 +127,18 @@ const translations = {
         'p_item7_h': '7. الاحتفاظ بالبيانات', 'p_item7_p': 'نحتفظ ببياناتك فقط طالما كان حسابك نشطاً. يتم تخزين سجلات الرسائل والوسائط بشكل آمن على خوادمنا الخلفية لضمان المزامنة بين أجهزتك.',
         'p_item8_h': '8. خصوصية الأطفال', 'p_item8_p': 'لاند تشات غير موجه للأطفال دون سن 13 عاماً. نحن لا نجمع بيانات الأطفال عمداً، وفي حال اكتشاف ذلك، نقوم بحذفها فوراً.',
         'p_item9_h': '9. حقوق حذف الحساب والبيانات', 'p_item9_p': 'لديك الحق الكامل في حذف حسابك وكافة البيانات المرتبطة به نهائياً عبر زر "حذف الحساب" الموجود في إعدادات التطبيق بضغطة واحدة.',
-        'p_item10_h': '10. التواصل والدعم', 'p_item10_p': 'لأي استفسارات تتعلق بالخصوصية أو طلبات إزالة البيانات، يرجى التواصل معنا عبر البريد: support@landchat.com أو من خلال مركز الدعم داخل التطبيق.',
+        'p_item10_h': '10. التواصل والدعم', 'p_item10_p': 'لأي استفسارات تتعلق بالخصوصية أو طلبات إزالة البيانات، يرجى التواصل معنا عبر البريد: admin@landchat.me أو من خلال مركز الدعم داخل التطبيق.',
 
         // شروط الاستخدام
         't_h1': 'شروط وأحكام استخدام لاند تشات',
-        't_intro': 'باستخدامك لـ لاند تشات، فإنك توافق تلقائياً على الشروط التالية. يرجى قراءتها بعناية.',
-        't_item1_h': '1. شروط القبول', 't_item1_p': 'بمجرد تنزيل التطبيق، تنطبق هذه الشروط عليك. لا يُسمح لك بنسخ أو تعديل أي جزء من التطبيق.',
-        't_item2_h': '2. التعديلات والرسوم', 't_item2_p': 'نحتفظ بالحق في إجراء تغييرات أو فرض رسوم مستقبلاً. لن نفرض أي رسوم دون توضيح الغرض مسبقاً.',
-        't_item3_h': '3. خصوصية وأمان البيانات', 't_item3_p': 'يعالج التطبيق البيانات لتقديم الخدمة. تقع على عاتقك مسؤولية أمان جهازك؛ لذا لا تقم بعمل Root لهاتفك.',
-        't_item4_h': '4. خدمات الطرف الثالث', 't_item4_p': 'يعتمد لاند تشات على خدمات Google Play و Firebase والتي تخضع لشروطها الخاصة.',
-        't_item5_h': '5. حدود المسؤولية', 't_item5_p': 'لاند تشات ليست مسؤولة عن عدم عمل التطبيق بسبب انقطاع الإنترنت أو نفاد رصيد البيانات.',
-        't_item6_h': '6. التحديثات والإنهاء', 't_item6_p': 'قد نقوم بتحديث التطبيق للأمان أو إنهاء الخدمة في أي وقت دون إشعار مسبق.',
-        't_item7_h': '7. التغييرات على الشروط', 't_item7_p': 'نحتفظ بالحق في تحديث الشروط دورياً. تسري التعديلات فور نشرها هنا.'
+        't_intro': 'باستخدامك لـ لاند تشات، فإنك توافق قانونياً على الشروط التالية. يرجى قراءتها بعناية لحماية حقوقك.',
+        't_item1_h': '1. قبول الشروط', 't_item1_p': 'بمجرد إنشاء حساب أو استخدام التطبيق، تعتبر موافقاً على هذه الاتفاقية. إذا كنت لا توافق، يجب عليك التوقف عن استخدام الخدمة فوراً.',
+        't_item2_h': '2. سلوك المستخدم والمحتوى', 't_item2_p': 'أنت مسؤول عن أي نشاط يتم عبر حسابك. يُحظر تماماً التحرش، خطاب الكراهية، الأنشطة غير القانونية، أو نشر محتوى مسيء، وسيؤدي ذلك للحظر الفوري.',
+        't_item3_h': '3. توفر الخدمة', 't_item3_p': 'نحن نسعى لضمان استمرارية الخدمة ولكن التطبيق يُقدم "كما هو". نحن غير مسؤولين عن أي انقطاع تقني أو فقدان بيانات ناتج عن ظروف خارجة عن إرادتنا.',
+        't_item4_h': '4. السلع الافتراضية والعملات', 't_item4_p': 'العملات (Gems) والهدايا هي سلع افتراضية لا تملك قيمة مالية حقيقية وغير قابلة للاسترداد. نحتفظ بالحق في سحب الأرصدة في حالات الاحتيال.',
+        't_item5_h': '5. حدود المسؤولية', 't_item5_p': 'لا تتحمل إدارة لاند تشات أي مسؤولية عن تعويضات مباشرة أو غير مباشرة ناتجة عن استخدامك للتطبيق أو اعتمادك على المعلومات فيه.',
+        't_item6_h': '6. إنهاء الحساب', 't_item6_p': 'نحتفظ بحق تعليق أو حذف أي حساب يخالف معايير المجتمع أو ينخرط في أنشطة مشبوهة دون إشعار مسبق أو تعويض.',
+        't_item7_h': '7. القانون والقوانين المعمول بها', 't_item7_p': 'تخضع هذه الشروط للقوانين والأنظمة المعمول بها محلياً ودولياً. نقوم بتحديث هذه الشروط دورياً لمواكبة التغييرات التنظيمية.',
     }
 };
 
