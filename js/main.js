@@ -7,7 +7,7 @@ const translations = {
         'nav_privacy': 'Privacy',
         'nav_terms': 'Terms',
         'footer_copy': '© 2026 Land Chat. All rights reserved.',
-        
+
         // Hero Section
         'title': 'Land Chat - Premium Messaging Experience',
         'hero_h1': 'Fast. Secure. Fun.',
@@ -46,18 +46,18 @@ const translations = {
         'd_secure': '100% Secure and Encrypted Version',
 
         // Privacy Policy (Full 10 Items)
-        'p_h1': 'Full Privacy Policy',
-        'p_intro': 'Land Chat is committed to protecting your privacy. These ten points explain our strict policy.',
-        'p_item1_h': '1. Introduction', 'p_item1_p': 'Service provided for secure messaging as described.',
-        'p_item2_h': '2. Info Collection', 'p_item2_p': 'We collect phone numbers and nicknames for account setup.',
-        'p_item3_h': '3. Log Data', 'p_item3_p': 'Technical logs for error fixing and stability.',
-        'p_item4_h': '4. Third-Party', 'p_item4_p': 'Use of Google and Firebase for app performance.',
-        'p_item5_h': '5. Cookies', 'p_item5_p': 'Minimal use of identifiers for session management.',
-        'p_item6_h': '6. Encryption', 'p_item6_p': 'End-to-End encryption for all your private chats.',
-        'p_item7_h': '7. Providers', 'p_item7_p': 'Trusted partners only for infrastructure.',
-        'p_item8_h': '8. Children', 'p_item8_p': 'Strictly for users above 13 years old.',
-        'p_item9_h': '9. Deletion', 'p_item9_p': 'Your right to wipe all data permanently.',
-        'p_item10_h': '10. Updates', 'p_item10_p': 'Policy may change to improve protection.',
+        'p_h1': 'Comprehensive Privacy Policy for Land Chat',
+        'p_intro': 'At Land Chat, your privacy is our top priority. This document outlines how we collect, use, and protect your data in compliance with Google Play policies.',
+        'p_item1_h': '1. Service Overview', 'p_item1_p': 'Land Chat provides secure messaging, voice calls, and community rooms. By using our application, you consent to the data practices described in this policy.',
+        'p_item2_h': '2. Information We Collect', 'p_item2_p': 'We collect essential data including: Phone numbers or emails for authentication, Nicknames and Profile Photos for identification, and Device Unique IDs (Android ID) for security and anti-fraud purposes.',
+        'p_item3_h': '3. Content Handling', 'p_item3_p': 'To provide messaging, we process your Text, Images, and Audio/Voice messages. Private messages are protected with encryption and are not used for advertising.',
+        'p_item4_h': '4. App Permissions', 'p_item4_p': 'The app requests access to Microphone (for voice messages/calls), Camera (for profile photos), and Storage (to save/send files). These are used only for core features.',
+        'p_item5_h': '5. Third-Party Services', 'p_item5_p': 'We use trusted partners: Google Play Services (Auth/Stability), Firebase (Push Notifications), and Supabase (Data Storage). They may collect technical identifiers according to their own policies.',
+        'p_item6_h': '6. Security & Encryption', 'p_item6_p': 'Your private conversations are secured with encryption. We implement industry-standard AES-256 encryption to protect your data from unauthorized access.',
+        'p_item7_h': '7. Data Retention', 'p_item7_p': 'We retain your data only as long as your account is active. Message logs and media are stored securely on our backend servers to sync across your devices.',
+        'p_item8_h': '8. Children Privacy', 'p_item8_p': 'Land Chat is not intended for children under 13. We do not knowingly collect data from children. If we discover such data, we delete it immediately.',
+        'p_item9_h': '9. Account Deletion Rights', 'p_item9_p': 'You have the absolute right to delete your account and all associated data permanently via the "Delete Account" button in the App Settings.',
+        'p_item10_h': '10. Contact & Support', 'p_item10_p': 'For privacy inquiries or data removal requests, please contact us at support@landchat.com or via the in-app support center.',
 
         // Terms of Service (Full 7 Items)
         't_h1': 'Terms of Service',
@@ -117,17 +117,17 @@ const translations = {
 
         // سياسة الخصوصية
         'p_h1': 'سياسة الخصوصية الشاملة لـ لاند تشات',
-        'p_intro': 'تلتزم منصة لاند تشات بحماية خصوصيتك وتوفير بيئة آمنة للتواصل. توضح هذه البنود العشرة سياستنا الصارمة.',
-        'p_item1_h': '1. مقدمة حول الخدمة', 'p_item1_p': 'يتم تقديم خدمة لاند تشات لغرض المراسلة الآمنة. باستخدامك للتطبيق، فإنك توافق على سياساتنا.',
-        'p_item2_h': '2. جمع واستخدام المعلومات', 'p_item2_p': 'قد نطلب تزويدنا بمعلومات مثل رقم الهاتف والاسم المستعار وصورة الملف الشخصي لتسهيل التواصل.',
-        'p_item3_h': '3. بيانات السجل (Log Data)', 'p_item3_p': 'في حال حدوث خطأ، نجمع بيانات تقنية مثل عنوان الـ IP ونوع الجهاز لإصلاح المشكلة.',
-        'p_item4_h': '4. خدمات الطرف الثالث', 'p_item4_p': 'يستخدم التطبيق خدمات Google Play و Firebase التي قد تجمع معلومات تعريفية.',
-        'p_item5_h': '5. ملفات تعريف الارتباط (Cookies)', 'p_item5_p': 'لا نستخدم الكوكيز مباشرة، ولكن قد تستخدمها مكتبات الطرف الثالث ولديكم خيار رفضها.',
-        'p_item6_h': '6. تشفير الرسائل', 'p_item6_p': 'نستخدم تشفير End-to-End. لا يمكن لأي طرف، بما في ذلك لاند تشات، الوصول لمحتوى محادثاتك.',
-        'p_item7_h': '7. مقدمو الخدمة', 'p_item7_p': 'قد نستعين بشركات خارجية لتسهيل خدمتنا؛ وصولهم للبيانات محدود جداً ولأغراض تقنية فقط.',
-        'p_item8_h': '8. خصوصية الأطفال', 'p_item8_p': 'خدماتنا لا تخاطب من هم دون 13 عاماً، ونحذف أي بيانات تتعلق بهم فور اكتشافها.',
-        'p_item9_h': '9. الحق في حذف البيانات نهائياً', 'p_item9_p': 'يمكنك حذف حسابك وكافة الرسائل والملفات نهائياً من داخل إعدادات التطبيق بضغطة زر.',
-        'p_item10_h': '10. التغييرات على هذه السياسة', 'p_item10_p': 'قد نقوم بتحديث السياسة دورياً، وننصحك بمراجعة هذه الصفحة بشكل مستمر.',
+        'p_intro': 'نحن في لاند تشات نضع خصوصيتك في مقدمة أولوياتنا. توضح هذه الوثيقة كيفية جمع بياناتك واستخدامها وحمايتها بما يتوافق مع سياسات متجر جوجل بلاي.',
+        'p_item1_h': '1. نظرة عامة على الخدمة', 'p_item1_p': 'يوفر لاند تشات خدمات المراسلة الآمنة، المكالمات الصوتية، وغرف المجتمعات. باستخدامك للتطبيق، فإنك توافق على ممارسات البيانات الموضحة هنا.',
+        'p_item2_h': '2. المعلومات التي نجمعها', 'p_item2_p': 'نجمع بيانات أساسية تشمل: أرقام الهاتف أو البريد الإلكتروني للتحقق، الأسماء المستعارة وصور الملف الشخصي للتعريف، ومعرفات الجهاز الفريدة (Android ID) لأغراض الأمان ومنع الاحتيال.',
+        'p_item3_h': '3. التعامل مع المحتوى', 'p_item3_p': 'لتقديم خدمة المراسلة، نقوم بمعالجة النصوص، الصور، والرسائل الصوتية الخاصة بك. الرسائل الخاصة محمية بالتشفير ولا تُستخدم لأغراض إعلانية.',
+        'p_item4_h': '4. أذونات التطبيق', 'p_item4_p': 'يطلب التطبيق الوصول إلى الميكروفون (للرسائل الصوتية/المكالمات)، الكاميرا (لصور الملف الشخصي/إرسال الصور)، والتخزين (لحفظ/إرسال الملفات). تُستخدم هذه الأذونات فقط للميزات الأساسية.',
+        'p_item5_h': '5. خدمات الطرف الثالث', 'p_item5_p': 'نستخدم شركاء موثوقين: خدمات Google Play (للتوثيق والاستقرار)، Firebase (للإشعارات)، و Supabase (لتخزين البيانات). قد يجمعون معرفات تقنية وفقاً لسياساتهم الخاصة.',
+        'p_item6_h': '6. الأمن والتشفير', 'p_item6_p': 'محادثاتك الخاصة مؤمنة بتقنيات تشفير متقدمة. نحن نطبق معيار التشفير AES-256 لحماية بياناتك من أي وصول غير مصرح به.',
+        'p_item7_h': '7. الاحتفاظ بالبيانات', 'p_item7_p': 'نحتفظ ببياناتك فقط طالما كان حسابك نشطاً. يتم تخزين سجلات الرسائل والوسائط بشكل آمن على خوادمنا الخلفية لضمان المزامنة بين أجهزتك.',
+        'p_item8_h': '8. خصوصية الأطفال', 'p_item8_p': 'لاند تشات غير موجه للأطفال دون سن 13 عاماً. نحن لا نجمع بيانات الأطفال عمداً، وفي حال اكتشاف ذلك، نقوم بحذفها فوراً.',
+        'p_item9_h': '9. حقوق حذف الحساب والبيانات', 'p_item9_p': 'لديك الحق الكامل في حذف حسابك وكافة البيانات المرتبطة به نهائياً عبر زر "حذف الحساب" الموجود في إعدادات التطبيق بضغطة واحدة.',
+        'p_item10_h': '10. التواصل والدعم', 'p_item10_p': 'لأي استفسارات تتعلق بالخصوصية أو طلبات إزالة البيانات، يرجى التواصل معنا عبر البريد: support@landchat.com أو من خلال مركز الدعم داخل التطبيق.',
 
         // شروط الاستخدام
         't_h1': 'شروط وأحكام استخدام لاند تشات',
