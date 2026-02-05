@@ -59,16 +59,19 @@ const translations = {
         'p_item9_h': '9. Account Deletion Rights', 'p_item9_p': 'You have the absolute right to delete your account and all associated data permanently via the "Delete Account" button in the App Settings.',
         'p_item10_h': '10. Contact & Support', 'p_item10_p': 'For privacy inquiries or data removal requests, please contact us at admin@landchat.me or via the in-app support center.',
 
-        // Terms of Service (Full 7 Items)
-        't_h1': 'Terms of Service',
-        't_intro': 'By using Land Chat, you agree to these legally binding terms. Please read them carefully.',
-        't_item1_h': '1. Acceptance of Terms', 't_item1_p': 'By creating an account or using Land Chat, you agree to be bound by these terms. If you do not agree, you must cease use immediately.',
-        't_item2_h': '2. User Conduct & Content', 't_item2_p': 'Users are responsible for all activity on their accounts. Harassment, hate speech, illegal activities, and distribution of malicious content are strictly prohibited and will result in immediate termination.',
-        't_item3_h': '3. Service Availability', 't_item3_p': 'While we strive for 100% uptime, Land Chat is provided "as is". We are not liable for any service interruptions, data loss, or technical failures.',
-        't_item4_h': '4. Virtual Goods & Gems', 't_item4_p': 'Virtual items (Gems/Gifts) have no real-world monetary value and are non-refundable. We reserve the right to manage/revoke virtual balances in cases of fraud or abuse.',
-        't_item5_h': '5. Limitation of Liability', 't_item5_p': 'Land Chat and its developers shall not be held liable for any direct, indirect, or incidental damages resulting from your use of the application.',
-        't_item6_h': '6. Account Termination', 't_item6_p': 'We reserve the right to suspend or delete accounts that violate our community guidelines or engage in suspicious activities without prior notice.',
-        't_item7_h': '7. Governing Law & Updates', 't_item7_p': 'These terms are governed by applicable local and international laws. We may update these terms periodically to reflect new regulations and features.',
+        // Terms of Service (Full 10 Items)
+        't_h1': 'Terms of Service & User Agreement',
+        't_intro': 'By using Land Chat, you agree to these legally binding terms. These terms protect both you and the platform. Please read them carefully.',
+        't_item1_h': '1. Acceptance of Terms', 't_item1_p': 'By creating an account, you agree to be bound by these terms. If you do not agree, you must cease use immediately.',
+        't_item2_h': '2. Eligibility & Registration', 't_item2_p': 'You must be at least 13 years old to use this service. You agree to provide accurate information and maintain the security of your account credentials.',
+        't_item3_h': '3. Prohibited Conduct', 't_item3_p': 'Users may not engage in illegal acts, harassment, spamming, bulk messaging, or distributing malware. Violations result in permanent bans.',
+        't_item4_h': '4. User-Generated Content (UGC)', 't_item4_p': 'You retain ownership of your content but grant Land Chat a license to host it. We enforce a zero-tolerance policy for "Objectionable Content" (e.g., hate speech, explicit violence). We reserve the right to remove any content at our discretion.',
+        't_item5_h': '5. Reporting & Moderation', 't_item5_p': 'Users can report content or users via in-app tools. We act on reports within 24 hours to remove infringing content and sanction violators.',
+        't_item6_h': '6. Virtual Goods (Gems)', 't_item6_p': 'Virtual items have no monetary value, are non-transferable outside the app, and are non-refundable under any circumstances.',
+        't_item7_h': '7. Account Termination', 't_item7_p': 'We may terminate or suspend your account without notice if you violate these terms or engage in behavior that harms the community.',
+        't_item8_h': '8. Limitation of Liability', 't_item8_p': 'Land Chat is provided "AS IS". We are not liable for any damages, data loss, or emotional distress resulting from service use.',
+        't_item9_h': '9. Governing Law', 't_item9_p': 'These terms are governed by applicable local and international laws. Disputes shall be resolved in the jurisdiction where the provider is located.',
+        't_item10_h': '10. Contact Us', 't_item10_p': 'For legal inquiries or support, please contact: admin@landchat.me',
     },
     ar: {
         // التنقل
@@ -131,14 +134,17 @@ const translations = {
 
         // شروط الاستخدام
         't_h1': 'شروط وأحكام استخدام لاند تشات',
-        't_intro': 'باستخدامك لـ لاند تشات، فإنك توافق قانونياً على الشروط التالية. يرجى قراءتها بعناية لحماية حقوقك.',
-        't_item1_h': '1. قبول الشروط', 't_item1_p': 'بمجرد إنشاء حساب أو استخدام التطبيق، تعتبر موافقاً على هذه الاتفاقية. إذا كنت لا توافق، يجب عليك التوقف عن استخدام الخدمة فوراً.',
-        't_item2_h': '2. سلوك المستخدم والمحتوى', 't_item2_p': 'أنت مسؤول عن أي نشاط يتم عبر حسابك. يُحظر تماماً التحرش، خطاب الكراهية، الأنشطة غير القانونية، أو نشر محتوى مسيء، وسيؤدي ذلك للحظر الفوري.',
-        't_item3_h': '3. توفر الخدمة', 't_item3_p': 'نحن نسعى لضمان استمرارية الخدمة ولكن التطبيق يُقدم "كما هو". نحن غير مسؤولين عن أي انقطاع تقني أو فقدان بيانات ناتج عن ظروف خارجة عن إرادتنا.',
-        't_item4_h': '4. السلع الافتراضية والعملات', 't_item4_p': 'العملات (Gems) والهدايا هي سلع افتراضية لا تملك قيمة مالية حقيقية وغير قابلة للاسترداد. نحتفظ بالحق في سحب الأرصدة في حالات الاحتيال.',
-        't_item5_h': '5. حدود المسؤولية', 't_item5_p': 'لا تتحمل إدارة لاند تشات أي مسؤولية عن تعويضات مباشرة أو غير مباشرة ناتجة عن استخدامك للتطبيق أو اعتمادك على المعلومات فيه.',
-        't_item6_h': '6. إنهاء الحساب', 't_item6_p': 'نحتفظ بحق تعليق أو حذف أي حساب يخالف معايير المجتمع أو ينخرط في أنشطة مشبوهة دون إشعار مسبق أو تعويض.',
-        't_item7_h': '7. القانون والقوانين المعمول بها', 't_item7_p': 'تخضع هذه الشروط للقوانين والأنظمة المعمول بها محلياً ودولياً. نقوم بتحديث هذه الشروط دورياً لمواكبة التغييرات التنظيمية.',
+        't_intro': 'باستخدامك لـ لاند تشات، فإنك توافق قانونياً على الشروط التالية. تم وضع هذه الشروط لحماية المستخدمين والمنصة معاً.',
+        't_item1_h': '1. قبول الاتفاقية', 't_item1_p': 'بمجرد إنشاء حساب، تعتبر موافقاً على هذه الاتفاقية. إذا كنت لا توافق على أي بند، يجب عليك التوقف عن استخدام الخدمة فوراً.',
+        't_item2_h': '2. الأهلية والتسجيل', 't_item2_p': 'يجب أن يكون عمرك 13 عاماً على الأقل لاستخدام الخدمة. أنت مسؤول عن دقة بياناتك وحماية سرية معلومات دخولك.',
+        't_item3_h': '3. السلوك المحظور', 't_item3_p': 'يُحظر تماماً التحرش، التهديد، إرسال رسائل عشوائية (Spam)، أو نشر برمجيات خبيثة. انتهاك هذه القواعد يؤدي للحظر الدائم.',
+        't_item4_h': '4. المحتوى الذي ينشئه المستخدم (UGC)', 't_item4_p': 'أنت تملك المحتوى الخاص بك ولكنك تمنحنا حق عرضه تقنياً. نطبق سياسة "عدم التسامح" مع المحتوى المسيء أو العنيف، ولنا الحق في حذفه فورا.',
+        't_item5_h': '5. الإبلاغ والرقابة', 't_item5_p': 'يمكن للمستخدمين الإبلاغ عن أي محتوى مسيء. نقوم بمراجعة البلاغات خلال 24 ساعة ونقوم باتخاذ الإجراءات اللازمة بحذف المحتوى أو حظر المستخدم.',
+        't_item6_h': '6. السلع والعملات الافتراضية', 't_item6_p': 'الجواهر والهدايا هي سلع افتراضية داخل التطبيق فقط، ليس لها قيمة مالية حقيقية ولا تقبل الاسترداد تحت أي ظرف.',
+        't_item7_h': '7. إنهاء الحساب', 't_item7_p': 'نحتفظ بالحق في إنهاء أو تعليق حسابك دون إشعار مسبق في حال مخالفة شروطنا أو القيام بسلوك يضر بالمجتمع.',
+        't_item8_h': '8. حدود المسؤولية', 't_item8_p': 'تُقدم الخدمة "كما هي". لا نتحمل مسؤولية أي أضرار ناتجة عن استخدام التطبيق أو فقدان البيانات أو أي انقطاع في الخدمة.',
+        't_item9_h': '9. القانون الحاكم', 't_item9_p': 'تخضع هذه الشروط للقوانين والأنظمة الدولية المعمول بها، ويتم الفصل في أي نزاع أمام المحاكم المختصة في مقر مزود الخدمة.',
+        't_item10_h': '10. اتصل بنا', 't_item10_p': 'للاستفسارات القانونية أو الدعم، يرجى مراسلتنا على: admin@landchat.me',
     }
 };
 
