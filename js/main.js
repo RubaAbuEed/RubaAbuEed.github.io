@@ -41,7 +41,7 @@ const translations = {
 
         // Download Page
         'd_h1': 'Download Land Chat',
-        'd_p': 'Get the latest version of Land Chat directly as an APK file.',
+        'd_p': 'Get the latest version of Land Chat from the official store.',
         'd_btn': 'Direct Download (APK)',
         'd_secure': '100% Secure and Encrypted Version',
         'update_notice_title': 'Installation Tip',
@@ -49,6 +49,7 @@ const translations = {
         'btn_ok': 'Got it',
         'd_gp_title': 'Google Play',
         'd_gp_desc': 'Official Store Version',
+        'd_btn_gp': 'Download from Store',
         'd_soon': 'Coming Soon',
         'd_apk_title': 'Direct APK',
         'd_apk_desc': 'Direct Download for Android',
@@ -126,7 +127,7 @@ const translations = {
 
         // صفحة التحميل
         'd_h1': 'تحميل لاند تشات',
-        'd_p': 'احصل على أحدث نسخة من تطبيق لاند تشات مباشرة بصيغة APK.',
+        'd_p': 'احصل على أحدث نسخة من تطبيق لاند تشات مباشرة من المتجر.',
         'd_btn': 'التحميل المباشر (APK)',
         'd_secure': 'إصدار آمن ومشفر 100%',
         'update_notice_title': 'نصيحة هامة للتثبيت',
@@ -134,6 +135,7 @@ const translations = {
         'btn_ok': 'حسناً، فهمت',
         'd_gp_title': 'Google Play',
         'd_gp_desc': 'النسخة الرسمية من المتجر',
+        'd_btn_gp': 'تحميل من المتجر',
         'd_soon': 'قريباً',
         'd_apk_title': 'Direct APK',
         'd_apk_desc': 'تحميل مباشر للأندرويد',
@@ -172,30 +174,6 @@ const translations = {
     }
 };
 
-// وظيفة التحميل الذكية من GitHub Releases
-async function downloadLatestAPK() {
-    const repoOwner = "RubaAbuEed";
-    const repoName = "RubaAbuEed.github.io";
-    try {
-        const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/releases/latest`);
-        const data = await response.json();
-        const apkFile = data.assets.find(asset => asset.name.endsWith('.apk'));
-        if (apkFile) {
-            window.location.href = apkFile.browser_download_url;
-        }
-
-        // Show the instruction modal after a short delay
-        setTimeout(() => {
-            showUpdateModal();
-        }, 1000);
-
-    } catch (e) {
-        window.location.href = "https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/2.4.0/landchat.2.4.0.release.apk";
-        setTimeout(() => {
-            showUpdateModal();
-        }, 1000);
-    }
-}
 
 // Modal Functions
 function showUpdateModal() {
