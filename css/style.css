@@ -341,6 +341,9 @@ nav {
 ======================================== */
 .tutorial-section {
     padding-top: 40px;
+    content-visibility: visible;
+    contain: none;
+    display: block;
 }
 
 .tutorial-subtitle {
@@ -370,6 +373,8 @@ nav {
     display: block;
     border-radius: 12px;
     background: #000;
+    aspect-ratio: 16 / 9;
+    min-height: 220px;
     max-height: 72vh;
 }
 
