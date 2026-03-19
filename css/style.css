@@ -336,6 +336,50 @@ nav {
     filter: drop-shadow(0 0 15px var(--glow-blue));
 }
 
+/* ========================================
+   Tutorial Video Section
+======================================== */
+.tutorial-section {
+    padding-top: 40px;
+}
+
+.tutorial-subtitle {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.tutorial-video-wrap {
+    width: min(980px, 94%);
+    margin: 24px auto 0;
+}
+
+.video-shell {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35), 0 0 30px rgba(14, 165, 233, 0.12);
+    padding: 10px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.tutorial-video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    background: #000;
+    max-height: 72vh;
+}
+
+.tutorial-note {
+    text-align: center;
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 0.92rem;
+}
+
 .logo {
     font-family: 'Cairo', system-ui, sans-serif;
     font-size: clamp(1.2rem, 4vw, 1.7rem);
