@@ -33,6 +33,11 @@ const translations = {
         'feat_files_h3': 'File Sharing',
         'feat_files_p': 'Send large photos and files at lightning speed without losing original quality.',
 
+        // Tutorial
+        'tutorial_title': 'How to Use Land Chat',
+        'tutorial_subtitle': 'Watch a direct walkthrough video to learn the main in-app steps.',
+        'tutorial_note': 'If playback does not start, update the video URL in the page source to the correct release asset link.',
+
         // Privacy & Data
         'data_handling_h2': 'Privacy & Data Protection',
         'data_handling_p': 'At Land Chat, we are committed to protecting your privacy and only collect essential data to run the service.',
@@ -118,6 +123,11 @@ const translations = {
         'feat_admin_p': 'أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين وحماية المجتمع من الرسائل المزعجة.',
         'feat_files_h3': 'مشاركة الملفات',
         'feat_files_p': 'أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة الأصلية للملفات.',
+
+        // شرح الاستخدام
+        'tutorial_title': 'شرح استخدام التطبيق',
+        'tutorial_subtitle': 'شاهد الفيديو المباشر للتعرف على أهم خطوات الاستخدام داخل التطبيق.',
+        'tutorial_note': 'إذا لم يبدأ التشغيل، حدّث رابط الفيديو في كود الصفحة إلى رابط ملف الإصدار الصحيح.',
 
         // الخصوصية
         'data_handling_h2': 'الخصوصية وحماية البيانات',
