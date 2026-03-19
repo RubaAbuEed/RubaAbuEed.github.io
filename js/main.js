@@ -3,6 +3,7 @@ const translations = {
     en: {
         // Navigation
         'nav_home': 'Home',
+        'nav_tutorial': 'Learn App',
         'nav_download': 'Download',
         'nav_privacy': 'Privacy',
         'nav_terms': 'Terms',
@@ -94,6 +95,7 @@ const translations = {
     ar: {
         // التنقل
         'nav_home': 'الرئيسية',
+        'nav_tutorial': 'تعلم التطبيق',
         'nav_download': 'التحميل',
         'nav_privacy': 'الخصوصية',
         'nav_terms': 'الشروط',
