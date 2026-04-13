@@ -61,6 +61,7 @@ const translations = {
         'd_apk_desc': 'Direct Download for Android',
         'd_ios_title': 'App Store',
         'd_ios_desc': 'iOS Version',
+        'd_btn_apk': 'Direct Download (APK)',
         'd_sec_title': 'Security Note',
         'd_sec_msg': 'Always ensure you download the app from official sources only. We never ask for your original passwords outside the app. All versions are digitally signed for verification.',
 
@@ -153,6 +154,7 @@ const translations = {
         'd_apk_desc': 'تحميل مباشر للأندرويد',
         'd_ios_title': 'App Store',
         'd_ios_desc': 'نسخة الـ iOS',
+        'd_btn_apk': 'تحميل مباشر (APK)',
         'd_sec_title': 'ملاحظة الأمان',
         'd_sec_msg': 'تأكد دائماً من تحميل التطبيق من المصادر الرسمية فقط. لا نطلب منك أبداً كلمات مرورك الأصلية خارج التطبيق. جميع النسخ موقعة رقمياً للتحقق من صحتها.',
 
