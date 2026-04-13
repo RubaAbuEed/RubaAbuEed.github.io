@@ -324,6 +324,18 @@
                     قريباً
                 </button>
             </div>
+
+            <!-- Direct APK -->
+            <div class="download-card">
+                <i class="fas fa-download icon apk"></i>
+                <h3 data-key="d_apk_title">تحميل مباشر</h3>
+                <p data-key="d_apk_desc">تحميل مباشر للأندرويد</p>
+                <a id="directApkBtn" href="#" class="btn-download active" style="text-decoration: none;" onclick="downloadLatestApk(event)">
+                    <i class="fas fa-download"></i>
+                    <span data-key="d_btn_apk" style="margin-right: 8px;">تحميل مباشر (APK)</span>
+                </a>
+                <span id="apkVersionBadge" class="version-badge" style="display:none;"></span>
+            </div>
         </div>
 
         <!-- ملاحظة الأمان -->
@@ -359,6 +371,52 @@
 
 
     <script src="../js/main.js?v=2.4.8"></script>
+    <script>
+        const GITHUB_RELEASES_API = 'https://api.github.com/repos/RubaAbuEed/RubaAbuEed.github.io/releases/latest';
+        let cachedApkUrl = null;
+
+        async function fetchLatestApk() {
+            try {
+                const res = await fetch(GITHUB_RELEASES_API);
+                if (!res.ok) return null;
+                const data = await res.json();
+                const apk = data.assets?.find(a => a.name.endsWith('.apk'));
+                if (apk) {
+                    cachedApkUrl = apk.browser_download_url;
+                    const badge = document.getElementById('apkVersionBadge');
+                    if (badge && data.tag_name) {
+                        badge.textContent = data.tag_name;
+                        badge.style.display = 'inline-block';
+                    }
+                }
+                return cachedApkUrl;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        function downloadLatestApk(e) {
+            e.preventDefault();
+            if (cachedApkUrl) {
+                window.location.href = cachedApkUrl;
+            } else {
+                const btn = document.getElementById('directApkBtn');
+                const origHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span style="margin-right:8px;">جاري التحقق...</span>';
+                fetchLatestApk().then(url => {
+                    if (url) {
+                        window.location.href = url;
+                    } else {
+                        btn.innerHTML = origHTML;
+                        alert(document.documentElement.lang === 'ar' ? 'لا يوجد إصدار متاح حالياً' : 'No release available');
+                    }
+                });
+            }
+        }
+
+        // Pre-fetch on page load
+        document.addEventListener('DOMContentLoaded', () => fetchLatestApk());
+    </script>
 </body>
 
 </html>
