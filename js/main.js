@@ -92,6 +92,8 @@ const translations = {
         't_item8_h': '8. Limitation of Liability', 't_item8_p': 'Land Chat is provided "AS IS". We are not liable for any damages, data loss, or emotional distress resulting from service use.',
         't_item9_h': '9. Governing Law', 't_item9_p': 'These terms are governed by applicable local and international laws. Disputes shall be resolved in the jurisdiction where the provider is located.',
         't_item10_h': '10. Contact Us', 't_item10_p': 'For legal inquiries or support, please contact: admin@landchat.me',
+        't_item11_h': '11. Payments and Refunds', 't_item11_p': 'Any amounts paid to purchase any subscriptions, services, accounts, special IDs, positions, or privileges are non-refundable under any circumstances whatsoever, and such amounts shall be deemed payment for the provision of the service until its discontinuation.',
+        'footer_last_modified': 'Last modified: 2026/05/01',
     },
     ar: {
         // التنقل
@@ -185,6 +187,8 @@ const translations = {
         't_item8_h': '8. حدود المسؤولية', 't_item8_p': 'تُقدم الخدمة "كما هي". لا نتحمل مسؤولية أي أضرار ناتجة عن استخدام التطبيق أو فقدان البيانات أو أي انقطاع في الخدمة.',
         't_item9_h': '9. القانون الحاكم', 't_item9_p': 'تخضع هذه الشروط للقوانين والأنظمة الدولية المعمول بها، ويتم الفصل في أي نزاع أمام المحاكم المختصة في مقر مزود الخدمة.',
         't_item10_h': '10. اتصل بنا', 't_item10_p': 'للاستفسارات القانونية أو الدعم، يرجى مراسلتنا على: admin@landchat.me',
+        't_item11_h': '11. المدفوعات واسترداد الأموال', 't_item11_p': 'تُعدّ أي مبالغ مالية يتم دفعها مقابل شراء أي اشتراكات أو خدمات أو حسابات أو معرفات مميزة أو مناصب أو امتيازات غير قابلة للاسترداد تحت أي ظرف من الظروف، وتُعتبر هذه المبالغ مقابل تقديم الخدمة حتى إيقافها.',
+        'footer_last_modified': 'آخر تعديل: 2026/05/01',
     }
 };
 
