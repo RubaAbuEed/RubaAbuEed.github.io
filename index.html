@@ -11,15 +11,14 @@
     <link rel="alternate" hreflang="ar" href="https://landchat.me/" />
     <link rel="alternate" hreflang="en" href="https://landchat.me/" />
     <link rel="alternate" hreflang="x-default" href="https://landchat.me/" />
-    <meta property="og:title" content="لاند تشات - Land Chat | مراسلة آمنة ومتطورة">
+    <meta property="og:title" content="LandChat - إشعار رسمي | Official Notice">
     <meta property="og:description"
-        content="لاند تشات - تطبيق المراسلة الأكثر أماناً مع تشفير عسكري ومميزات فريدة للتواصل">
+        content="إشعار رسمي بشأن التوقف المؤقت لخدمات تطبيق LandChat">
     <meta property="og:image" content="https://landchat.me/images/logo.webp">
     <meta property="og:url" content="https://landchat.me/">
     <meta name="twitter:card" content="summary_large_image">
-    <title data-key="title">لاند تشات - Land Chat | مراسلة آمنة ومتطورة</title>
-    <meta name="description" content="لاند تشات - تطبيق المراسلة الأكثر أماناً مع تشفير عسكري ومميزات فريدة للتواصل">
-    <meta name="keywords" content="لاند تشات, Land Chat, تطبيق دردشة, مراسلة آمنة, تشفير">
+    <title>LandChat - إشعار رسمي | Official Notice</title>
+    <meta name="description" content="إشعار رسمي بشأن التوقف المؤقت لخدمات تطبيق LandChat">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -34,8 +33,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet"></noscript>
     <link rel="preload" as="image" href="/images/logo.webp" type="image/webp" fetchpriority="high">
-    <link rel="preload" as="image" href="/images/hero-mobile.webp" imagesrcset="/images/hero-mobile.webp 768w, /images/hero.webp 1280w" imagesizes="100vw" type="image/webp" fetchpriority="high">
     <link rel="icon" type="image/webp" href="/images/logo.webp">
+    <style>
+        .announcement-wrap {
+            min-height: calc(100vh - 160px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: clamp(20px, 5vw, 60px) 15px;
+        }
+
+        .announcement-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: clamp(1.5rem, 5vw, 4rem);
+            max-width: 780px;
+            width: 100%;
+            color: #fff;
+        }
+
+        .announcement-card .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(244, 114, 182, 0.12);
+            border: 1px solid rgba(244, 114, 182, 0.35);
+            color: #f9a8d4;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 1.4rem;
+        }
+
+        .announcement-card h1 {
+            font-size: clamp(1.4rem, 5vw, 2rem);
+            line-height: 1.4;
+            margin-bottom: 1.2rem;
+            color: #fff;
+        }
+
+        .announcement-card p {
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.9;
+            margin-bottom: 1rem;
+            font-size: clamp(0.95rem, 3vw, 1.05rem);
+        }
+
+        .announcement-card .signature {
+            margin-top: 1.6rem;
+            font-weight: 700;
+            color: #fff;
+            opacity: 0.9;
+        }
+
+        .announcement-card .divider {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            margin: 1.8rem 0;
+        }
+
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, #229ED9 0%, #0088cc 100%);
+            color: #fff;
+            font-family: 'Cairo', system-ui, sans-serif;
+            font-weight: 700;
+            font-size: clamp(1rem, 3vw, 1.1rem);
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 16px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+            box-shadow: 0 8px 24px rgba(0, 136, 204, 0.35);
+        }
+
+        .telegram-btn i {
+            font-size: 1.4rem;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+            box-shadow: 0 12px 32px rgba(0, 136, 204, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .announcement-card {
+                border-radius: 22px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -46,23 +140,6 @@
         <div class="light-orb orb-3"></div>
     </div>
 
-    <!-- الفقاعات المشعة المتحركة -->
-    <div class="bubbles-container">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-
-    <!-- شبكة الخطوط الخلفية -->
-    <div class="grid-overlay"></div>
-
     <!-- شريط التنقل -->
     <nav>
         <a href="/" class="logo-container">
@@ -71,166 +148,105 @@
         </a>
         <div class="nav-controls">
             <button class="lang-toggle" id="langToggle">English</button>
-            <div class="dropdown">
-                <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
-                <ul class="dropdown-content" id="menuDropdown">
-                    <li><a href="/" data-key="nav_home"><i class="fas fa-home"></i> الرئيسية</a></li>
-                    <li><a href="#tutorial" data-key="nav_tutorial"><i class="fas fa-circle-play"></i> تعلم التطبيق</a></li>
-                    <li><a href="/download/" data-key="nav_download"><i class="fas fa-download"></i> التحميل</a></li>
-                    <li><a href="/privacy/" data-key="nav_privacy"><i class="fas fa-shield-halved"></i> الخصوصية</a>
-                    </li>
-                    <li><a href="/terms/" data-key="nav_terms"><i class="fas fa-file-contract"></i> الشروط</a></li>
-                </ul>
-            </div>
         </div>
     </nav>
 
-    <!-- قسم الهيرو - محسّن لإظهار الصورة -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 data-key="hero_h1">
-                <i class="fas fa-bolt" style="font-size: 0.8em; margin-left: 10px;"></i>
-                سريع. آمن. ممتع.
-            </h1>
-            <p data-key="hero_p">يقدم لاند تشات تجربة مراسلة خاصة مثالية مع تشفير تام ومميزات متميزة لضمان خصوصيتك وأمان
-                محادثاتك.</p>
-            <a href="/download/" class="btn-primary" data-key="btn_download" style="text-decoration: none;">
-                <i class="fab fa-android"></i>
-                تحميل لاند تشات الآن
+    <!-- الإعلان -->
+    <main class="announcement-wrap">
+        <section class="announcement-card">
+            <!-- النسخة العربية -->
+            <div id="announcement-ar" dir="rtl">
+                <span class="badge"><i class="fas fa-bullhorn"></i> إعلان رسمي</span>
+                <h1>إعلان رسمي بشأن التوقف المؤقت لخدمات تطبيق LandChat</h1>
+                <p>السلام عليكم ورحمة الله وبركاته،</p>
+                <p>تفيد إدارة تطبيق LandChat أعضاء المجتمع الكرام بأنه قد تقرر إيقاف جميع خدمات التطبيق والأنشطة المرتبطة به مؤقتاً وحتى إشعار آخر، وذلك اعتباراً من تاريخ 10 أكتوبر 2026.</p>
+                <p>يأتي هذا القرار نتيجة لمراجعة شاملة للأداء التشغيلي والمالي للمشروع، حيث واجه التطبيق ارتفاعاً مستمراً في التكاليف التشغيلية الإلزامية (والتي تشمل صيانة الخوادم، وسعة النطاق الترددي، والخدمات الصوتية)، بالتزامن مع عدم تحقيق مستويات الانتشار والنمو المطلوبة في قاعدة المستخدمين والنشاط العام على مدار أكثر من ثمانية أشهر متواصلة.</p>
+                <p>وبناءً عليه، تقرر تجميد العمليات التشغيلية لإعادة دراسة الجدوى الاقتصادية وخيارات التطوير المستقبلي. نتوجه لكم بجزيل الشكر على دعمكم خلال الفترة الماضية، ونقدّر تفهمكم لهذا القرار التنظيمي.</p>
+                <p class="signature">— إدارة تطبيق LandChat</p>
+            </div>
+
+            <!-- النسخة الإنجليزية -->
+            <div id="announcement-en" dir="ltr" style="display: none;">
+                <span class="badge"><i class="fas fa-bullhorn"></i> Official Notice</span>
+                <h1>Official Notice: Temporary Suspension of LandChat Services</h1>
+                <p>LandChat Management hereby informs all users that all application services and operations will be temporarily suspended until further notice, effective October 10, 2026.</p>
+                <p>This administrative decision follows a comprehensive financial and operational performance audit. The platform has continued to incur significant, rising fixed operational costs (including server maintenance, bandwidth, and voice service subscriptions) while failing to achieve acceptable user adoption, growth rates, and overall activity over a period exceeding eight consecutive months.</p>
+                <p>Consequently, operations are being paused to allow for a formal reassessment of the project's economic viability and strategic direction. We express our gratitude for your community involvement and appreciate your understanding of this necessary decision.</p>
+                <p class="signature">— LandChat Management</p>
+            </div>
+
+            <hr class="divider">
+
+            <!-- زر تيليجرام -->
+            <a href="https://t.me/LandChat_ar" target="_blank" rel="noopener noreferrer" class="telegram-btn">
+                <i class="fab fa-telegram"></i>
+                <span id="telegram-label-ar">اشترك في قناتنا الرسمية على تيليجرام</span>
+                <span id="telegram-label-en" style="display: none;">Join our official Telegram channel</span>
             </a>
-        </div>
-    </header>
-
-    <!-- قسم المميزات -->
-    <section class="features" id="features">
-        <div class="section-title">
-            <h2 data-key="features_title">
-                <i class="fas fa-star" style="color: var(--accent-cyan); margin-left: 10px;"></i>
-                المميزات الأساسية
-            </h2>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-shield-halved"></i>
-                <h3 data-key="feat_security_h3">تشفير عسكري</h3>
-                <p data-key="feat_security_p">حماية قصوى لرسائلك في لاند تشات باستخدام AES-256 لضمان الخصوصية التامة.
-                </p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-video"></i>
-                <h3 data-key="feat_calls_h3">مكالمات HD</h3>
-                <p data-key="feat_calls_p">مكالمات صوتية ومرئية فائقة الجودة تعمل بكفاءة عالية حتى في ظروف الإنترنت
-                    الضعيفة.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-users-rectangle"></i>
-                <h3 data-key="feat_rooms_h3">غرف وتجمعات</h3>
-                <p data-key="feat_rooms_p">أنشئ مجتمعك الخاص أو انضم لآلاف الغرف العامة في لاند تشات للتواصل مع الآخرين.
-                </p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-gift"></i>
-                <h3 data-key="feat_gifts_h3">هدايا وجوائز</h3>
-                <p data-key="feat_gifts_p">عبر عن مشاعرك بإرسال هدايا افتراضية مميزة واجمع النقاط لرفع مستوى حسابك.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-microphone-lines"></i>
-                <h3 data-key="feat_voice_h3">رسائل صوتية</h3>
-                <p data-key="feat_voice_p">تواصل أسرع عبر الرسائل الصوتية الواضحة مع ميزة تسريع التشغيل للرسائل الطويلة.
-                </p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-medal"></i>
-                <h3 data-key="feat_levels_h3">نظام مستويات</h3>
-                <p data-key="feat_levels_p">احصل على أوسمة نادرة وارفع رتبتك في التطبيق لتكون من نخبة مستخدمي لاند تشات.
-                </p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-user-shield"></i>
-                <h3 data-key="feat_admin_h3">إدارة احترافية</h3>
-                <p data-key="feat_admin_p">أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين وحماية المجتمع من الرسائل
-                    المزعجة.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-file-arrow-up"></i>
-                <h3 data-key="feat_files_h3">مشاركة الملفات</h3>
-                <p data-key="feat_files_p">أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة الأصلية
-                    للملفات.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم الخصوصية -->
-    <section class="features privacy-section">
-        <div class="section-title">
-            <h2 data-key="data_handling_h2">
-                <i class="fas fa-lock" style="color: var(--accent-pink); margin-left: 10px;"></i>
-                الخصوصية وحماية البيانات
-            </h2>
-        </div>
-        <div class="features-grid" style="max-width: 900px; margin: 0 auto; grid-template-columns: 1fr;">
-            <div class="feature-card" style="text-align: center;">
-                <i class="fas fa-user-lock" style="font-size: 4rem; margin-bottom: 2rem;"></i>
-                <p data-key="data_handling_p" style="font-size: 1.15rem; color: rgba(255,255,255,0.85);">
-                    نحن في لاند تشات نلتزم بحماية خصوصيتك ولا نجمع إلا الضروري من البيانات لتشغيل الخدمة.
-                </p>
-                <h3 data-key="data_deletion_h3" style="margin-top: 2.5rem; color: var(--accent-cyan);">
-                    <i class="fas fa-trash-can" style="margin-left: 8px;"></i>
-                    طلب حذف الحساب
-                </h3>
-                <p data-key="data_deletion_p" style="margin-top: 1rem;">
-                    يمكنك حذف حسابك وكافة البيانات المرتبطة به نهائياً بضغطة زر واحدة من داخل إعدادات التطبيق.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم شرح الاستخدام بالفيديو -->
-    <section class="features tutorial-section" id="tutorial">
-        <div class="section-title">
-            <h2 data-key="tutorial_title">
-                <i class="fas fa-circle-play" style="color: var(--accent-cyan); margin-left: 10px;"></i>
-                شرح استخدام التطبيق
-            </h2>
-            <p data-key="tutorial_subtitle" class="tutorial-subtitle">
-                شاهد الفيديو المباشر للتعرف على أهم خطوات الاستخدام داخل التطبيق.
-            </p>
-        </div>
-
-        <div class="tutorial-video-wrap">
-            <div class="video-shell">
-                <!-- ضع رابط فيديو GitHub Releases بصيغة مباشرة داخل src أدناه -->
-                <!-- مثال: https://github.com/OWNER/REPO/releases/download/v2.6.21/landchat-guide.mp4 -->
-                <video id="tutorialVideo" class="tutorial-video" controls preload="metadata" playsinline poster="/images/hero-mobile.webp">
-                    <source src="https://github.com/RubaAbuEed/RubaAbuEed.github.io/releases/download/1.0.0.0/video_2026-03-19_14-47-25.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="tutorial-note" data-key="tutorial_note">
-                إذا لم يبدأ التشغيل، تأكد من تحديث رابط الفيديو في كود الصفحة إلى رابط الإصدار الصحيح.
-            </p>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- التذييل -->
     <footer>
         <div class="footer-links">
             <a href="/privacy/">
                 <i class="fas fa-shield-halved"></i>
-                Privacy Policy
+                <span id="footer-privacy-ar">سياسة الخصوصية</span>
+                <span id="footer-privacy-en" style="display: none;">Privacy Policy</span>
             </a>
             <a href="/terms/">
                 <i class="fas fa-file-contract"></i>
-                Terms of Service
-            </a>
-            <a href="/download/">
-                <i class="fas fa-download"></i>
-                Download
+                <span id="footer-terms-ar">الشروط والأحكام</span>
+                <span id="footer-terms-en" style="display: none;">Terms of Service</span>
             </a>
         </div>
-        <p data-key="footer_copy">© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
+        <p>© 2026 لاند تشات - Land Chat. جميع الحقوق محفوظة.</p>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script>
+        (function () {
+            function applyLang(lang) {
+                const isAr = lang === 'ar';
+                document.documentElement.lang = lang;
+                document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+
+                document.getElementById('announcement-ar').style.display = isAr ? 'block' : 'none';
+                document.getElementById('announcement-en').style.display = isAr ? 'none' : 'block';
+
+                document.getElementById('telegram-label-ar').style.display = isAr ? 'inline' : 'none';
+                document.getElementById('telegram-label-en').style.display = isAr ? 'inline' : 'none';
+
+                document.getElementById('footer-privacy-ar').style.display = isAr ? 'inline' : 'none';
+                document.getElementById('footer-privacy-en').style.display = isAr ? 'inline' : 'none';
+
+                document.getElementById('footer-terms-ar').style.display = isAr ? 'inline' : 'none';
+                document.getElementById('footer-terms-en').style.display = isAr ? 'inline' : 'none';
+
+                const btn = document.getElementById('langToggle');
+                if (btn) {
+                    btn.textContent = isAr ? 'English' : 'العربية';
+                }
+
+                try {
+                    localStorage.setItem('preferredLang', lang);
+                } catch (e) { /* ignore */ }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                let lang = 'ar';
+                try {
+                    lang = localStorage.getItem('preferredLang') || 'ar';
+                } catch (e) { /* ignore */ }
+
+                document.getElementById('langToggle').addEventListener('click', function () {
+                    const current = document.documentElement.lang === 'ar' ? 'ar' : 'en';
+                    applyLang(current === 'ar' ? 'en' : 'ar');
+                });
+
+                applyLang(lang);
+            });
+        })();
+    </script>
 </body>
 
 </html>
