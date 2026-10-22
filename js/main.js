@@ -33,6 +33,18 @@ const translations = {
         'feat_admin_p': 'Powerful tools for moderators to manage rooms, ban violators, and protect the community.',
         'feat_files_h3': 'File Sharing',
         'feat_files_p': 'Send large photos and files at lightning speed without losing original quality.',
+        'feat_chat_h3': 'Private & Group Chat',
+        'feat_chat_p': 'Text, photos, files and voice notes with groups.',
+        'feat_profile_h3': 'Profile Customization',
+        'feat_profile_p': 'Avatar frames, badges, GIFs, wall video and full customization.',
+        'feat_space_h3': 'Personal Space',
+        'feat_space_p': 'Publish public posts (text + photo) on your profile.',
+        'feat_vpn_h3': 'VPN / Proxy',
+        'feat_vpn_p': 'Bypass restrictions and access the service in blocked regions.',
+        'feat_2fa_h3': 'Two-Factor Auth (2FA)',
+        'feat_2fa_p': 'Extra protection for your account via two-factor authentication.',
+        'feat_support_h3': 'Support Tickets',
+        'feat_support_p': 'Contact the support team through the ticket system.',
 
         // Tutorial
         'tutorial_title': 'How to Use Land Chat',
@@ -128,6 +140,18 @@ const translations = {
         'feat_admin_p': 'أدوات قوية للمشرفين لإدارة الغرف وحظر المخالفين وحماية المجتمع من الرسائل المزعجة.',
         'feat_files_h3': 'مشاركة الملفات',
         'feat_files_p': 'أرسل الصور والملفات بأحجام كبيرة وبسرعة فائقة دون فقدان الجودة الأصلية للملفات.',
+        'feat_chat_h3': 'دردشة خاصة ومجموعات',
+        'feat_chat_p': 'رسائل نصية، صور، ملفات ورسائل صوتية مع مجموعات.',
+        'feat_profile_h3': 'تخصيص الملف الشخصي',
+        'feat_profile_p': 'إطارات صور، شارات، GIF، فيديو جداري وتخصيص كامل.',
+        'feat_space_h3': 'المساحة الشخصية',
+        'feat_space_p': 'انشر منشورات عامة (نص + صورة) على ملفك الشخصي.',
+        'feat_vpn_h3': 'VPN / Proxy',
+        'feat_vpn_p': 'تجاوز القيود والوصول للخدمة في المناطق المحجوبة.',
+        'feat_2fa_h3': 'المصادقة (2FA)',
+        'feat_2fa_p': 'حماية إضافية لحسابك via المصادقة الثنائية.',
+        'feat_support_h3': 'تذاكر الدعم',
+        'feat_support_p': 'تواصل مع فريق الدعم عبر نظام التذاكر.',
 
         // شرح الاستخدام
         'tutorial_title': 'شرح استخدام التطبيق',
@@ -189,6 +213,58 @@ const translations = {
         't_item10_h': '10. اتصل بنا', 't_item10_p': 'للاستفسارات القانونية أو الدعم، يرجى مراسلتنا على: admin@landchat.me',
         't_item11_h': '11. المدفوعات واسترداد الأموال', 't_item11_p': 'تُعدّ أي مبالغ مالية يتم دفعها مقابل شراء أي اشتراكات أو خدمات أو حسابات أو معرفات مميزة أو مناصب أو امتيازات غير قابلة للاسترداد تحت أي ظرف من الظروف، وتُعتبر هذه المبالغ مقابل تقديم الخدمة حتى إيقافها.',
         'footer_last_modified': 'آخر تعديل: 2026/05/01',
+    },
+    fa: {
+        'nav_home': 'خانه',
+        'nav_download': 'دانلود',
+        'nav_privacy': 'حریم خصوصی',
+        'nav_terms': 'شرایط',
+        'footer_copy': '© 2026 Land Chat. تمامی حقوق محفوظ است.',
+        'title': 'Land Chat - پیام‌رسانی امن و پیشرفته',
+        'hero_h1': 'سریع. امن. سرگرم‌کننده.',
+        'hero_p': 'Land Chat امن‌ترین اپلیکیشن پیام‌رسانی است که برای تجربه‌ای منحصر به فرد از ارتباط با رمزنگاری نظامی طراحی شده است.',
+        'btn_download': 'همین حالا Land Chat را دانلود کنید',
+        'features_title': 'ویژگی‌های اصلی',
+        'feat_security_h3': 'رمزنگاری نظامی',
+        'feat_security_p': 'حداکثر محافظت از پیام‌های شما با رمزنگاری AES-256 برای حفظ حریم خصوصی کامل.',
+        'feat_chat_h3': 'چت خصوصی و گروهی',
+        'feat_chat_p': 'پیام متنی، عکس، فایل و یادداشت صوتی همراه با گروه‌ها.',
+        'feat_calls_h3': 'تماس‌های HD',
+        'feat_calls_p': 'تماس‌های صوتی و تصویری با کیفیت فوق‌العاده حتی در اینترنت ضعیف.',
+        'feat_voice_h3': 'پیام‌های صوتی',
+        'feat_voice_p': 'ارتباط سریع‌تر با یادداشت‌های صوتی واضح و کنترل سرعت پخش.',
+        'feat_rooms_h3': 'اتاق‌ها و جوامع',
+        'feat_rooms_p': 'جامعه خود را بسازید یا به هزاران اتاق عمومی Land Chat بپیوندید.',
+        'feat_games_h3': 'بازی‌های داخلی',
+        'feat_games_p': 'لودو، مار و پله، دوز، رولت و بازی کارت با دوستان.',
+        'feat_gifts_h3': 'هدایا و پاداش‌ها',
+        'feat_gifts_p': 'احساسات خود را با هدایای مجازی ویژه ابراز کنید و جواهر جمع کنید.',
+        'feat_levels_h3': 'سیستم سطح',
+        'feat_levels_p': 'نشان‌های کمیاب کسب کنید و رتبه خود را ارتقا دهید.',
+        'feat_vip_h3': 'VIP و رویال',
+        'feat_vip_p': 'اشتراک‌های VIP و رویال با نشان متحرک، نام گرادیان و حباب‌های ویژه.',
+        'feat_profile_h3': 'شخصی‌سازی پروفایل',
+        'feat_profile_p': 'قاب آواتار، نشان‌ها، GIF، ویدیو دیواری و شخصی‌سازی کامل.',
+        'feat_space_h3': 'فضای شخصی',
+        'feat_space_p': 'انتشار پست‌های عمومی (متن + عکس) در پروفایل شما.',
+        'feat_vpn_h3': 'VPN / پروکسی',
+        'feat_vpn_p': 'دور زدن محدودیت‌ها و دسترسی به سرویس در مناطق مسدود.',
+        'feat_admin_h3': 'مدیریت حرفه‌ای',
+        'feat_admin_p': 'ابزارهای قدرتمند برای مدیران جهت مدیریت اتاق‌ها و مسدود کردن متخلفان.',
+        'feat_files_h3': 'اشتراک‌گذاری فایل',
+        'feat_files_p': 'ارسال عکس و فایل با حجم بزرگ و سرعت بالا.',
+        'feat_2fa_h3': 'احراز هویت دو مرحله‌ای (2FA)',
+        'feat_2fa_p': 'محافظت اضافی برای حساب شما از طریق احراز هویت دو مرحله‌ای.',
+        'feat_support_h3': 'تیکت‌های پشتیبانی',
+        'feat_support_p': 'تماس با تیم پشتیبانی از طریق سیستم تیکت.',
+        'data_handling_h2': 'حریم خصوصی و محافظت از داده‌ها',
+        'data_handling_p': 'در Land Chat متعهد به محافظت از حریم خصوصی شما هستیم و فقط داده‌های ضروری را جمع‌آوری می‌کنیم.',
+        'data_deletion_h3': 'درخواست حذف حساب',
+        'data_deletion_p': 'می‌توانید حساب و تمام داده‌های مرتبط را با یک کلیک از تنظیمات اپلیکیشن حذف کنید.',
+        'footer_privacy': 'سیاست حریم خصوصی',
+        'footer_terms': 'شرایط خدمات',
+        'footer_download': 'دانلود',
+        'footer_last_modified': 'آخرین ویرایش: 2026/05/01',
     }
 };
 
@@ -208,10 +284,9 @@ function closeUpdateModal() {
     }
 }
 
-// تبديل اللغة
 function switchLanguage(lang) {
     document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.dir = (lang === 'ar' || lang === 'fa') ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
         if (translations[lang] && translations[lang][key]) {
@@ -220,14 +295,19 @@ function switchLanguage(lang) {
     });
     localStorage.setItem('preferredLang', lang);
     const btn = document.getElementById('langToggle');
-    if (btn) btn.textContent = lang === 'ar' ? 'English' : 'العربية';
+    if (btn) {
+        const next = lang === 'ar' ? 'English' : (lang === 'en' ? 'فارسی' : 'العربية');
+        btn.textContent = next;
+    }
 }
 
 // تشغيل الوظائف عند التحميل
 document.addEventListener('DOMContentLoaded', () => {
     // تبديل اللغة
     document.getElementById('langToggle')?.addEventListener('click', () => {
-        switchLanguage(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+        const cur = document.documentElement.lang;
+        const next = cur === 'ar' ? 'en' : (cur === 'en' ? 'fa' : 'ar');
+        switchLanguage(next);
     });
 
     // القائمة المنسدلة
